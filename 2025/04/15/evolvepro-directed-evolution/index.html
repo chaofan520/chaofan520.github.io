@@ -1,0 +1,2795 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="EvolvePro-directed evolution, zhangchaofan&#39;s blog">
+    <meta name="description" content="分享生活，分享知识">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
+    
+    <style>
+        
+        #waifu{
+            left: auto !important;
+            right: 440px !important;
+        }
+    </style>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>EvolvePro-directed evolution | zhangchaofan&#39;s blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="zhangchaofan's blog" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+        <!-- 元宵节灯笼样式开始 -->
+<style>
+    @media only screen and (min-width: 1124px) {
+        .nav-menu {
+            padding-right: 96px;
+        }
+    }
+    @media only screen and (max-width: 760px) {
+        .deng-box, .deng-box1 {
+            width: 40%;
+        }
+        .right {
+            float: left!important;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .right {
+            float: left!important;
+        }
+    }
+    .deng-box {
+        position: fixed;
+        top: -40px;
+        right: -20px;
+        z-index: 999;
+    }
+    .deng-box1 {
+        position: fixed;
+        top: -30px;
+        right: 10px;
+        z-index: 999;
+    }
+    .deng-box1 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 5s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+    }
+    .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 3s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+    }
+    .deng-a {
+        width: 100px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: 12px 8px 8px 10px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    .deng-b {
+        width: 45px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: -4px 8px 8px 26px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    .xian {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        width: 2px;
+        height: 20px;
+        background: #dc8f03;
+    }
+    .shui-a {
+        position: relative;
+        width: 5px;
+        height: 20px;
+        margin: -5px 0 0 59px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        -webkit-transform-origin: 50% -45px;
+        background: #ffa500;
+        border-radius: 0 0 5px 5px;
+    }
+    .shui-b {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        background: #dc8f03;
+        border-radius: 50%;
+    }
+    .shui-c {
+        position: absolute;
+        top: 18px;
+        left: -2px;
+        width: 10px;
+        height: 35px;
+        background: #ffa500;
+        border-radius: 0 0 0 5px;
+    }
+    .deng:before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    .deng:after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    @font-face {
+        font-family: "华文行楷";
+        src: url('/fonts/华文行楷.ttf');
+    }
+    .deng-t {
+        font-family: 华文行楷;
+        font-size: 26px;
+        color: #dc8f03;
+        font-weight: bold;
+        line-height: 44px;
+        text-align: center;
+    }
+    .night .deng-t,
+    .night .deng-box,
+    .night .deng-box1 {
+        background: transparent !important;
+    }
+    @-moz-keyframes swing {
+        0% {
+                -moz-transform: rotate(-10deg)
+        }
+        50% {
+             -moz-transform: rotate(10deg)
+        }
+        100% {
+                -moz-transform: rotate(-10deg)
+        }
+    }
+    @-webkit-keyframes swing {
+        0% {
+                -webkit-transform: rotate(-10deg)
+        }
+        50% {
+                -webkit-transform: rotate(10deg)
+        }
+        100% {
+                -webkit-transform: rotate(-10deg)
+        }
+    }
+</style>
+<div class="deng-box">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">喜迎</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+<div class="deng-box1">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">新春</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+<!-- 元宵节灯笼样式结束 -->
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/favicon.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">zhangchaofan&#39;s blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>联系我</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-location-arrow" style="zoom: 0.6;"></i>
+      
+      <span>导航</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/navigate">
+          
+          <i class="fas fa-location-arrow" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>导航</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/home">
+          
+          <i class="fas fa-home" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>首页</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/music">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/box">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>聚宝盒</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/favicon.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">zhangchaofan&#39;s blog</div>
+        <div class="logo-desc">
+            
+            分享生活，分享知识
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			联系我
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-location-arrow"></i>
+			
+			导航
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/navigate " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-location-arrow" style="position: absolute;left:50px" ></i>
+			      
+		          <span>导航</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/home " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-home" style="position: absolute;left:50px" ></i>
+			      
+		          <span>首页</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/music " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/box " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>聚宝盒</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/plant/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">EvolvePro-directed evolution</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Deep-Learning/">
+                                <span class="chip bg-color">Deep Learning</span>
+                            </a>
+                        
+                            <a href="/tags/Directed-evolution/">
+                                <span class="chip bg-color">Directed evolution</span>
+                            </a>
+                        
+                            <a href="/tags/Molecular-design/">
+                                <span class="chip bg-color">Molecular design</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2025-04-15
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2025-05-18
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    6.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    36 分
+                </div>
+                
+
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <style>
+pre {
+  overflow-y: auto;
+  max-height: 300px;
+}
+</style>
+
+<h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h2><p>进化（演化）是生物种群在遗传变异、自然选择、遗传漂变等因素作用下，随时间累积而发生的适应性变化过程。进化的结果在宏观上可以体现在生物体与祖先的表型差异，微观上则是分子水平的基因频率改变。自然界中的进化有几个重要性的因素：1）变异的多样性；2）变异可遗传；3）选择压力适中。<br>&emsp;&emsp;而定向进化则是人为地模拟自然界中选择作用，可以对物种的表型进行选择，也可以对具体的某个分子（蛋白）进行选择。我们首先从原始序列（也称为野生型）人工构建大量的突变体文库，然后衡量突变体的表型（如植株的高度，果实大小、蛋白分子的稳定性|溶解度|酶活性等）。选择最优表型的突变体，作为下一次突变的起始序列，迭代这一过程。这一过程可以理解为于爬山，理想表型的突变体在山顶，每迭代一次相当于向山顶靠近一步。<br>&emsp;&emsp;20世纪中叶小麦的绿色革命可以作为一个宏观定向进化的例子，我们想获得一个抗倒伏的矮杆品种，初始情况下我们有一个性状优良的小麦群体，但是这个群体的小麦都比较高。我们人为选取该群体中较矮的植株进行诱变，对后代的植株高度进行观察，选择后代中较矮的植株再进行诱变，如此迭代几轮，直到后代整体的植株高度符合要求。分子的定向进化也类似于这个过程。<br>&emsp;&emsp;前言部分只是简单的介绍了下背景，感兴趣的同学可以去深入了解。大家可以想一下为什么<code>酶定向进化</code>和<code>肽和抗体噬菌体展示</code>一起获得2018年诺贝尔化学奖。</p>
+<p><a target="_blank" rel="noopener" href="https://www.nature.shu.edu.cn/CN/10.3969/j.issn.0253-9608.2018.06.004"><img src="https://s21.ax1x.com/2025/05/18/pEv672q.png" alt="pEv672q.png"></a></p>
+<h2 id="1-EvolvePro环境安装"><a href="#1-EvolvePro环境安装" class="headerlink" title="1. EvolvePro环境安装"></a>1. EvolvePro环境安装</h2><p>需要预安装的一些软件，包括：</p>
+<ol>
+<li><code>conda</code></li>
+<li><code>CUDA驱动</code></li>
+<li><code>Slurm</code>作业提交系统</li>
+</ol>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">## 1. EvolvePro的安装</span>
+git clone https<span class="token punctuation">:</span><span class="token operator">//</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>mat10d<span class="token operator">/</span>EvolvePro<span class="token punctuation">.</span>git
+cd EvolvePro
+conda env create <span class="token operator">-</span>f environment<span class="token punctuation">.</span>yml
+conda activate evolvepro
+
+<span class="token comment">## 2. 安装依赖</span>
+<span class="token comment">### 感觉不是必须</span>
+<span class="token comment">### 众所周知的原因，大陆地区这里可能会失败，多试几次就好了（雾</span>
+sh setup_plm<span class="token punctuation">.</span>sh
+conda activate plm
+<span class="token comment"># 切换回evolvepro</span>
+conda activate evolvepro
+
+<span class="token comment">## 3. Download Pretrained models</span>
+<span class="token comment"># wget https://dl.fbaipublicfiles.com/fair-esm/models/esm1b_t33_650M_UR50S.pt</span>
+cd  data<span class="token operator">/</span>chaofan<span class="token operator">/</span>projects<span class="token operator">/</span><span class="token number">08</span><span class="token punctuation">.</span>Directed_evolution<span class="token operator">/</span><span class="token number">00</span><span class="token punctuation">.</span>EVOLVEpro <span class="token comment"># 工作文件夹</span>
+wget https<span class="token punctuation">:</span><span class="token operator">//</span>dl<span class="token punctuation">.</span>fbaipublicfiles<span class="token punctuation">.</span>com<span class="token operator">/</span>fair<span class="token operator">-</span>esm<span class="token operator">/</span>models<span class="token operator">/</span>esm1b_t33_650M_UR50S<span class="token punctuation">.</span>pt
+wget https<span class="token punctuation">:</span><span class="token operator">//</span>dl<span class="token punctuation">.</span>fbaipublicfiles<span class="token punctuation">.</span>com<span class="token operator">/</span>fair<span class="token operator">-</span>esm<span class="token operator">/</span>regression<span class="token operator">/</span>esm1b_t33_650M_UR50S<span class="token operator">-</span>contact<span class="token operator">-</span>regression<span class="token punctuation">.</span>pt
+
+<span class="token comment"># wget https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt</span>
+<span class="token comment"># wget https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t33_650M_UR50D-contact-regression.pt</span>
+<span class="token comment">### esm2用在下游任务上会比esm1b好一点</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>&emsp;&emsp;有两条路，一条是多轮实验迭代，每轮实验加入新测量的表型值；另一条是基于深度突变扫描的数据。</p>
+<h2 id="2-代码实现-Experimental-Workflow"><a href="#2-代码实现-Experimental-Workflow" class="headerlink" title="2. 代码实现 (Experimental Workflow)"></a>2. 代码实现 (Experimental Workflow)</h2><h3 id="2-1-构建单氨基酸突变文库"><a href="#2-1-构建单氨基酸突变文库" class="headerlink" title="2.1 构建单氨基酸突变文库"></a>2.1 构建单氨基酸突变文库</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> evolvepro<span class="token punctuation">.</span>src<span class="token punctuation">.</span>process <span class="token keyword">import</span> generate_wt<span class="token punctuation">,</span> generate_single_aa_mutants
+generate_wt<span class="token punctuation">(</span><span class="token string">'MAKEDNIEMQGTVLETLPNTMFRVELENGHVVTAHISGKMRKNYIRILTGDKVTVELTPYDLSKGRIVFRSR'</span><span class="token punctuation">,</span> output_file<span class="token operator">=</span><span class="token string">'./kelsic_WT.fasta'</span><span class="token punctuation">)</span>
+generate_single_aa_mutants<span class="token punctuation">(</span><span class="token string">'./kelsic_WT.fasta'</span><span class="token punctuation">,</span> output_file<span class="token operator">=</span><span class="token string">'./kelsic.fasta'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Number of mutants: 1369<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> evolvepro<span class="token punctuation">.</span>src<span class="token punctuation">.</span>process <span class="token keyword">import</span> suggest_initial_mutants
+suggest_initial_mutants<span class="token punctuation">(</span><span class="token string">'./kelsic.fasta'</span><span class="token punctuation">,</span> num_mutants<span class="token operator">=</span><span class="token number">12</span><span class="token punctuation">,</span> random_seed<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Suggested 12 mutants for testing:
+1. R23K
+2. T58E
+3. I36D
+4. V31C
+5. I7A
+6. K3F
+7. Q10P
+8. G38E
+9. E4M
+10. D61W
+11. E4Y
+12. R23N<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>我们随机的从单突变体文库中挑选这12条突变序列进行模型初始的训练，这12条序列与后续的Round1.xlsx文件是对应的。</p>
+<h3 id="2-2-获取Protein-Language-model的编码矩阵"><a href="#2-2-获取Protein-Language-model的编码矩阵" class="headerlink" title="2.2 获取Protein Language model的编码矩阵"></a>2.2 获取Protein Language model的编码矩阵</h3><p><code>BERT</code>语言模型能很好的将离散的文本序列转换为数值型的特征矩阵，广泛运用于文本分类任务</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">!mkdir <span class="token operator">-</span>p Single_mutation_concatenate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 如提前下好了预训练模型，通过 .pt 结尾文件代表本地加载权重，如没有 .pt后缀，默认会重新下载权重文件。</span>
+!python <span class="token operator">/</span>data<span class="token operator">/</span>chaofan<span class="token operator">/</span>software<span class="token operator">/</span>EvolvePro<span class="token operator">/</span>evolvepro<span class="token operator">/</span>plm<span class="token operator">/</span>esm<span class="token operator">/</span>extract<span class="token punctuation">.</span>py esm1b_t33_650M_UR50S<span class="token punctuation">.</span>pt <span class="token punctuation">.</span><span class="token operator">/</span>kelsic<span class="token punctuation">.</span>fasta <span class="token punctuation">.</span><span class="token operator">/</span>kelsic_esm1b_t33_650M_UR50S <span class="token operator">-</span><span class="token operator">-</span>toks_per_batch <span class="token number">512</span> <span class="token operator">-</span><span class="token operator">-</span>include mean <span class="token operator">-</span><span class="token operator">-</span>concatenate_dir <span class="token punctuation">.</span><span class="token operator">/</span>Single_mutation_concatenate<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Transferred model to GPU
+Read kelsic.fasta with 1369 sequences
+Processing 1 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 2 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 3 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 4 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 5 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 6 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 7 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 8 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 9 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 10 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 11 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 12 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 13 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 14 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 15 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 16 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 17 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 18 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 19 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 20 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 21 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 22 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 23 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 24 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 25 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 26 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 27 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 28 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 29 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 30 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 31 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 32 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 33 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 34 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 35 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 36 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 37 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 38 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 39 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 40 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 41 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 42 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 43 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 44 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 45 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 46 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 47 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 48 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 49 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 50 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 51 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 52 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 53 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 54 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 55 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 56 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 57 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 58 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 59 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 60 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 61 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 62 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 63 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 64 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 65 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 66 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 67 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 68 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 69 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 70 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 71 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 72 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 73 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 74 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 75 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 76 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 77 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 78 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 79 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 80 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 81 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 82 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 83 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 84 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 85 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 86 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 87 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 88 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 89 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 90 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 91 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 92 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 93 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 94 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 95 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 96 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 97 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 98 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 99 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 100 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 101 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 102 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 103 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 104 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 105 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 106 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 107 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 108 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 109 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 110 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 111 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 112 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 113 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 114 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 115 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 116 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 117 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 118 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 119 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 120 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 121 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 122 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 123 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 124 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 125 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 126 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 127 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 128 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 129 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 130 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 131 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 132 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 133 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 134 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 135 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 136 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 137 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 138 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 139 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 140 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 141 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 142 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 143 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 144 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 145 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 146 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 147 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 148 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 149 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 150 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 151 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 152 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 153 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 154 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 155 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 156 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 157 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 158 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 159 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 160 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 161 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 162 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 163 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 164 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 165 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 166 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 167 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 168 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 169 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 170 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 171 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 172 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 173 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 174 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 175 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 176 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 177 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 178 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 179 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 180 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 181 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 182 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 183 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 184 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 185 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 186 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 187 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 188 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 189 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 190 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 191 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 192 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 193 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 194 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 195 of 196 batches (7 sequences)
+Device: cuda:0
+Processing 196 of 196 batches (4 sequences)
+Device: cuda:0
+Saved representations to kelsic_esm1b_t33_650M_UR50S
+Shape of concatenated DataFrame: (1369, 1280)
+Saved concatenated representations to Single_mutation_concatenate/kelsic_esm1b_t33_650M_UR50S.pt.csv<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>因为频繁出现注入攻击，现pytorch强制要求加载权重时是否相信来源，此处需要修改<code>/data/chaofan/miniconda3/envs/evolvepro/lib/python3.11/site-packages/esm/pretrained.py</code>代码， 在第70行调用函数处加上<code>weights_only=False</code>。<br><a target="_blank" rel="noopener" href="https://imgse.com/i/pEj78Ds"><img src="https://s21.ax1x.com/2025/05/15/pEj78Ds.png" alt="pEj78Ds.png"></a></p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Number <span class="token keyword">of</span> <span class="token literal-property property">mutants</span><span class="token operator">:</span> <span class="token number">1369</span>
+
+<span class="token function">Traceback</span> <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span><span class="token operator">:</span>
+  File <span class="token string">"/data/chaofan/software/EvolvePro/evolvepro/plm/esm/extract.py"</span><span class="token punctuation">,</span> line <span class="token number">193</span><span class="token punctuation">,</span> <span class="token keyword">in</span> <span class="token operator">&lt;</span>module<span class="token operator">></span>
+    <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  File <span class="token string">"/data/chaofan/software/EvolvePro/evolvepro/plm/esm/extract.py"</span><span class="token punctuation">,</span> line <span class="token number">181</span><span class="token punctuation">,</span> <span class="token keyword">in</span> main
+    <span class="token function">run</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span>
+  File <span class="token string">"/data/chaofan/software/EvolvePro/evolvepro/plm/esm/extract.py"</span><span class="token punctuation">,</span> line <span class="token number">73</span><span class="token punctuation">,</span> <span class="token keyword">in</span> run
+    model<span class="token punctuation">,</span> alphabet <span class="token operator">=</span> pretrained<span class="token punctuation">.</span><span class="token function">load_model_and_alphabet</span><span class="token punctuation">(</span>args<span class="token punctuation">.</span>model_location<span class="token punctuation">)</span>
+                      <span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span>
+  File <span class="token string">"/data/chaofan/miniconda3/envs/evolvepro/lib/python3.11/site-packages/esm/pretrained.py"</span><span class="token punctuation">,</span> line <span class="token number">26</span><span class="token punctuation">,</span> <span class="token keyword">in</span> load_model_and_alphabet
+    <span class="token keyword">return</span> <span class="token function">load_model_and_alphabet_local</span><span class="token punctuation">(</span>model_name<span class="token punctuation">)</span>
+           <span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span>
+  File <span class="token string">"/data/chaofan/miniconda3/envs/evolvepro/lib/python3.11/site-packages/esm/pretrained.py"</span><span class="token punctuation">,</span> line <span class="token number">70</span><span class="token punctuation">,</span> <span class="token keyword">in</span> load_model_and_alphabet_local
+    model_data <span class="token operator">=</span> torch<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token function">str</span><span class="token punctuation">(</span>model_location<span class="token punctuation">)</span><span class="token punctuation">,</span> map_location<span class="token operator">=</span><span class="token string">"cpu"</span><span class="token punctuation">)</span>
+                 <span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span><span class="token operator">^</span>
+  File <span class="token string">"/data/chaofan/miniconda3/envs/evolvepro/lib/python3.11/site-packages/torch/serialization.py"</span><span class="token punctuation">,</span> line <span class="token number">1470</span><span class="token punctuation">,</span> <span class="token keyword">in</span> load
+    raise pickle<span class="token punctuation">.</span><span class="token function">UnpicklingError</span><span class="token punctuation">(</span><span class="token function">_get_wo_message</span><span class="token punctuation">(</span><span class="token function">str</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> from None
+_pickle<span class="token punctuation">.</span>UnpicklingError<span class="token operator">:</span> Weights only load failed<span class="token punctuation">.</span> This file can still be loaded<span class="token punctuation">,</span> to <span class="token keyword">do</span> so you have two options<span class="token punctuation">,</span> <span class="token keyword">do</span> those steps only <span class="token keyword">if</span> you trust the source <span class="token keyword">of</span> the checkpoint<span class="token punctuation">.</span> 
+	<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> In PyTorch <span class="token number">2.6</span><span class="token punctuation">,</span> we changed the <span class="token keyword">default</span> value <span class="token keyword">of</span> the <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">weights_only</span><span class="token template-punctuation string">`</span></span> argument <span class="token keyword">in</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">torch.load</span><span class="token template-punctuation string">`</span></span> <span class="token keyword">from</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">False</span><span class="token template-punctuation string">`</span></span> to <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">True</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">.</span> Re<span class="token operator">-</span>running <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">torch.load</span><span class="token template-punctuation string">`</span></span> <span class="token keyword">with</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">weights_only</span><span class="token template-punctuation string">`</span></span> <span class="token keyword">set</span> to <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">False</span><span class="token template-punctuation string">`</span></span> will likely succeed<span class="token punctuation">,</span> but it can result <span class="token keyword">in</span> arbitrary code execution<span class="token punctuation">.</span> Do it only <span class="token keyword">if</span> you got the file from a trusted source<span class="token punctuation">.</span>
+	<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> Alternatively<span class="token punctuation">,</span> to load <span class="token keyword">with</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">weights_only=True</span><span class="token template-punctuation string">`</span></span> please check the recommended steps <span class="token keyword">in</span> the following error message<span class="token punctuation">.</span>
+	WeightsUnpickler error<span class="token operator">:</span> Unsupported global<span class="token operator">:</span> <span class="token constant">GLOBAL</span> argparse<span class="token punctuation">.</span>Namespace was not an allowed global by <span class="token keyword">default</span><span class="token punctuation">.</span> Please use <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">torch.serialization.add_safe_globals([Namespace])</span><span class="token template-punctuation string">`</span></span> or the <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">torch.serialization.safe_globals([Namespace])</span><span class="token template-punctuation string">`</span></span> context manager to allowlist <span class="token keyword">this</span> global <span class="token keyword">if</span> you trust <span class="token keyword">this</span> <span class="token keyword">class</span><span class="token operator">/</span><span class="token keyword">function</span><span class="token punctuation">.</span>
+
+Check the documentation <span class="token keyword">of</span> torch<span class="token punctuation">.</span>load to learn more about types accepted by <span class="token keyword">default</span> <span class="token keyword">with</span> weights_only https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>pytorch<span class="token punctuation">.</span>org<span class="token operator">/</span>docs<span class="token operator">/</span>stable<span class="token operator">/</span>generated<span class="token operator">/</span>torch<span class="token punctuation">.</span>load<span class="token punctuation">.</span>html<span class="token punctuation">.</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>经过上述步骤，每条文本的氨基酸序列被一个长为1280的数值向量代替，表格中一共有1369条序列，分别是一条野生型+1368条(19*野生型序列长度)单氨基酸变异序列</p>
+<h3 id="2-3-对模型进行多轮few-shot训练"><a href="#2-3-对模型进行多轮few-shot训练" class="headerlink" title="2.3 对模型进行多轮few-shot训练"></a>2.3 对模型进行多轮few-shot训练</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> evolvepro<span class="token punctuation">.</span>src<span class="token punctuation">.</span>evolve <span class="token keyword">import</span> evolve_experimental
+
+protein_name <span class="token operator">=</span> <span class="token string">'kelsic'</span>
+embeddings_base_path <span class="token operator">=</span> <span class="token string">'Single_mutation_concatenate'</span>
+embeddings_file_name <span class="token operator">=</span> <span class="token string">'kelsic_esm1b_t33_650M_UR50S.pt.csv'</span>
+round_base_path <span class="token operator">=</span> <span class="token string">'/data/chaofan/software/EvolvePro/colab/rounds_data'</span>
+wt_fasta_path <span class="token operator">=</span> <span class="token string">"./kelsic_WT.fasta"</span>
+number_of_variants <span class="token operator">=</span> <span class="token number">12</span>
+output_dir <span class="token operator">=</span> <span class="token string">'./'</span>
+rename_WT <span class="token operator">=</span> <span class="token boolean">False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-3-1-Round1"><a href="#2-3-1-Round1" class="headerlink" title="2.3.1 Round1"></a>2.3.1 Round1</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">round_name <span class="token operator">=</span> <span class="token string">'Round1'</span>
+round_file_names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'kelsic_Round1.xlsx'</span><span class="token punctuation">]</span>
+
+this_round_variants<span class="token punctuation">,</span> df_test<span class="token punctuation">,</span> df_sorted_all <span class="token operator">=</span> evolve_experimental<span class="token punctuation">(</span>
+    protein_name<span class="token punctuation">,</span>
+    round_name<span class="token punctuation">,</span>
+    embeddings_base_path<span class="token punctuation">,</span>
+    embeddings_file_name<span class="token punctuation">,</span>
+    round_base_path<span class="token punctuation">,</span>
+    round_file_names<span class="token punctuation">,</span>
+    wt_fasta_path<span class="token punctuation">,</span>
+    rename_WT<span class="token punctuation">,</span>
+    number_of_variants<span class="token punctuation">,</span>
+    output_dir
+<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Processing kelsic - Round1
+    Embeddings loaded: (1369, 1280)
+    Loaded experimental data for kelsic_Round1.xlsx: (12, 3)
+    iteration shape: (12, 2)
+    Labels shape: (1369, 5)
+    Embeddings and labels are aligned
+    (1357,)
+    
+    Tested variants in this round: 12
+    43       K3F
+    67       E4M
+    76       E4Y
+    115      I7A
+    184     Q10P
+    427     R23K
+    430     R23N
+    572     V31C
+    668     I36D
+    707     G38E
+    1087    T58E
+    1158    D61W
+    Name: variant, dtype: object
+    
+    Top 12 variants predicted by the model:
+        variant    y_pred  y_actual  y_actual_scaled  y_actual_binary dist_metric  \
+    74      E4V  0.954787       NaN              NaN              NaN        None   
+    225    T12S  0.952057       NaN              NaN              NaN        None   
+    5       M1F  0.951310       NaN              NaN              NaN        None   
+    63      E4H  0.950540       NaN              NaN              NaN        None   
+    15      M1S  0.947988       NaN              NaN              NaN        None   
+    19      M1Y  0.944838       NaN              NaN              NaN        None   
+    18      M1W  0.944590       NaN              NaN              NaN        None   
+    249    L14C  0.942195       NaN              NaN              NaN        None   
+    61      E4F  0.942045       NaN              NaN              NaN        None   
+    10      M1L  0.941873       NaN              NaN              NaN        None   
+    142     E8L  0.941533       NaN              NaN              NaN        None   
+    135     E8C  0.941173       NaN              NaN              NaN        None   
+    
+         std_predictions  
+    74               0.0  
+    225              0.0  
+    5                0.0  
+    63               0.0  
+    15               0.0  
+    19               0.0  
+    18               0.0  
+    249              0.0  
+    61               0.0  
+    10               0.0  
+    142              0.0  
+    135              0.0  
+    
+    Data saved to ./kelsic/Round1
+
+
+    /data/chaofan/software/EvolvePro/evolvepro/src/model.py:200: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+      df_all = pd.concat([df_train, df_test])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>&emsp;&emsp;模型的设计非常简单，主要是用预训练的BERT模型去抽特征，然后用传统的机器学习方法(随机森林，XGBoost等)对特征进行回归分析。第一轮使用<code>12</code>条随机数据进行训练，第二列使用<code>12 * 2</code>条数据重新训练，以此类推，第N轮使用<code>12 * N</code>条数据进行训练。每轮只训练顶层的传统机器学习模型。<br>&emsp;&emsp;训练后的模型先对整个突变体库扫一遍，对每个突变体进行表型值打分并排序，取预测表型值最好的<code>12</code>个突变体（且没有真实表型值）进行真实表型值验证。将新测量的真实表型值加入到下一轮的模型训练中，也就是每一轮过后，训练数据集会多出<code>12</code>条。按道理来说，<code>Round2.xlsx</code>的数据应该是上一轮预测的Top12突变体的真实表型值，但因为不同软件版本的差异，这里展示的结果可能会与原文有一定的差异，这是正常现象。</p>
+<p><a target="_blank" rel="noopener" href="https://www.science.org/cms/10.1126/science.adr6006/asset/65d73316-daa4-4525-93cf-b07d2f0254b2/assets/images/large/science.adr6006-f1.jpg"><img src="https://s21.ax1x.com/2025/05/15/pEjbkTI.png" alt="pEjbkTI.png"></a></p>
+<h4 id="2-3-2-Round2"><a href="#2-3-2-Round2" class="headerlink" title="2.3.2 Round2"></a>2.3.2 Round2</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">round_name <span class="token operator">=</span> <span class="token string">'Round2'</span>
+round_file_names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'kelsic_Round1.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round2.xlsx'</span><span class="token punctuation">]</span>
+
+this_round_variants<span class="token punctuation">,</span> df_test<span class="token punctuation">,</span> df_sorted_all <span class="token operator">=</span> evolve_experimental<span class="token punctuation">(</span>
+    protein_name<span class="token punctuation">,</span>
+    round_name<span class="token punctuation">,</span>
+    embeddings_base_path<span class="token punctuation">,</span>
+    embeddings_file_name<span class="token punctuation">,</span>
+    round_base_path<span class="token punctuation">,</span>
+    round_file_names<span class="token punctuation">,</span>
+    wt_fasta_path<span class="token punctuation">,</span>
+    rename_WT<span class="token punctuation">,</span>
+    number_of_variants<span class="token punctuation">,</span>
+    output_dir
+<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Processing kelsic - Round2
+    Embeddings loaded: (1369, 1280)
+    Loaded experimental data for kelsic_Round1.xlsx: (12, 3)
+    Loaded experimental data for kelsic_Round2.xlsx: (12, 3)
+    iteration shape: (24, 2)
+    Labels shape: (1369, 5)
+    Embeddings and labels are aligned
+    (1345,)
+    
+    Tested variants in this round: 24
+    43       K3F
+    61       E4F
+    63       E4H
+    66       E4L
+    67       E4M
+    68       E4N
+    70       E4Q
+    74       E4V
+    76       E4Y
+    86       D5M
+    115      I7A
+    135      E8C
+    146      E8Q
+    184     Q10P
+    211     T12C
+    220     T12M
+    427     R23K
+    430     R23N
+    572     V31C
+    668     I36D
+    707     G38E
+    1087    T58E
+    1158    D61W
+    1332    S71C
+    Name: variant, dtype: object
+    
+    Top 12 variants predicted by the model:
+        variant    y_pred  y_actual  y_actual_scaled  y_actual_binary dist_metric  \
+    80      D5F  1.000372       NaN              NaN              NaN        None   
+    75      E4W  0.990040       NaN              NaN              NaN        None   
+    64      E4I  0.982857       NaN              NaN              NaN        None   
+    83      D5I  0.977915       NaN              NaN              NaN        None   
+    95      D5Y  0.974122       NaN              NaN              NaN        None   
+    85      D5L  0.971400       NaN              NaN              NaN        None   
+    93      D5V  0.970972       NaN              NaN              NaN        None   
+    62      E4G  0.970870       NaN              NaN              NaN        None   
+    469    E25Q  0.969735       NaN              NaN              NaN        None   
+    7       M1H  0.967748       NaN              NaN              NaN        None   
+    94      D5W  0.967325       NaN              NaN              NaN        None   
+    578    V31I  0.967287       NaN              NaN              NaN        None   
+    
+         std_predictions  
+    80               0.0  
+    75               0.0  
+    64               0.0  
+    83               0.0  
+    95               0.0  
+    85               0.0  
+    93               0.0  
+    62               0.0  
+    469              0.0  
+    7                0.0  
+    94               0.0  
+    578              0.0  
+    
+    Data saved to ./kelsic/Round2
+
+
+    /data/chaofan/software/EvolvePro/evolvepro/src/model.py:200: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+      df_all = pd.concat([df_train, df_test])
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-3-3-Round3"><a href="#2-3-3-Round3" class="headerlink" title="2.3.3 Round3"></a>2.3.3 Round3</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">round_name <span class="token operator">=</span> <span class="token string">'Round3'</span>
+round_file_names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'kelsic_Round1.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round2.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round3.xlsx'</span><span class="token punctuation">]</span>
+
+this_round_variants<span class="token punctuation">,</span> df_test<span class="token punctuation">,</span> df_sorted_all <span class="token operator">=</span> evolve_experimental<span class="token punctuation">(</span>
+    protein_name<span class="token punctuation">,</span>
+    round_name<span class="token punctuation">,</span>
+    embeddings_base_path<span class="token punctuation">,</span>
+    embeddings_file_name<span class="token punctuation">,</span>
+    round_base_path<span class="token punctuation">,</span>
+    round_file_names<span class="token punctuation">,</span>
+    wt_fasta_path<span class="token punctuation">,</span>
+    rename_WT<span class="token punctuation">,</span>
+    number_of_variants<span class="token punctuation">,</span>
+    output_dir
+<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Processing kelsic - Round3
+    Embeddings loaded: (1369, 1280)
+    Loaded experimental data for kelsic_Round1.xlsx: (12, 3)
+    Loaded experimental data for kelsic_Round2.xlsx: (12, 3)
+    Loaded experimental data for kelsic_Round3.xlsx: (12, 3)
+    iteration shape: (36, 2)
+    Labels shape: (1369, 5)
+    Embeddings and labels are aligned
+    (1333,)
+    
+    Tested variants in this round: 36
+    18       M1W
+    43       K3F
+    59       E4C
+    61       E4F
+    63       E4H
+    64       E4I
+    66       E4L
+    67       E4M
+    68       E4N
+    70       E4Q
+    74       E4V
+    75       E4W
+    76       E4Y
+    78       D5C
+    80       D5F
+    83       D5I
+    85       D5L
+    86       D5M
+    87       D5N
+    93       D5V
+    95       D5Y
+    115      I7A
+    135      E8C
+    146      E8Q
+    184     Q10P
+    211     T12C
+    220     T12M
+    427     R23K
+    430     R23N
+    469     E25Q
+    572     V31C
+    668     I36D
+    707     G38E
+    1087    T58E
+    1158    D61W
+    1332    S71C
+    Name: variant, dtype: object
+    
+    Top 12 variants predicted by the model:
+        variant    y_pred  y_actual  y_actual_scaled  y_actual_binary dist_metric  \
+    82      D5H  0.985537       NaN              NaN              NaN        None   
+    77      D5A  0.974578       NaN              NaN              NaN        None   
+    91      D5S  0.973428       NaN              NaN              NaN        None   
+    89      D5Q  0.972064       NaN              NaN              NaN        None   
+    504    E27M  0.964911       NaN              NaN              NaN        None   
+    496    E27C  0.959024       NaN              NaN              NaN        None   
+    500    E27H  0.958966       NaN              NaN              NaN        None   
+    71      E4R  0.957292       NaN              NaN              NaN        None   
+    92      D5T  0.956897       NaN              NaN              NaN        None   
+    137     E8F  0.953024       NaN              NaN              NaN        None   
+    505    E27N  0.952960       NaN              NaN              NaN        None   
+    143     E8M  0.952932       NaN              NaN              NaN        None   
+    
+         std_predictions  
+    82               0.0  
+    77               0.0  
+    91               0.0  
+    89               0.0  
+    504              0.0  
+    496              0.0  
+    500              0.0  
+    71               0.0  
+    92               0.0  
+    137              0.0  
+    505              0.0  
+    143              0.0  
+    
+    Data saved to ./kelsic/Round3
+
+
+    /data/chaofan/software/EvolvePro/evolvepro/src/model.py:200: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+      df_all = pd.concat([df_train, df_test])
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h4 id="2-3-4-Round4"><a href="#2-3-4-Round4" class="headerlink" title="2.3.4 Round4"></a>2.3.4 Round4</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">round_name <span class="token operator">=</span> <span class="token string">'Round4'</span>
+round_file_names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'kelsic_Round1.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round2.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round3.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round4.xlsx'</span><span class="token punctuation">]</span>
+
+this_round_variants<span class="token punctuation">,</span> df_test<span class="token punctuation">,</span> df_sorted_all <span class="token operator">=</span> evolve_experimental<span class="token punctuation">(</span>
+    protein_name<span class="token punctuation">,</span>
+    round_name<span class="token punctuation">,</span>
+    embeddings_base_path<span class="token punctuation">,</span>
+    embeddings_file_name<span class="token punctuation">,</span>
+    round_base_path<span class="token punctuation">,</span>
+    round_file_names<span class="token punctuation">,</span>
+    wt_fasta_path<span class="token punctuation">,</span>
+    rename_WT<span class="token punctuation">,</span>
+    number_of_variants<span class="token punctuation">,</span>
+    output_dir
+<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Processing kelsic - Round4
+    Embeddings loaded: (1369, 1280)
+    Loaded experimental data for kelsic_Round1.xlsx: (12, 3)
+    Loaded experimental data for kelsic_Round2.xlsx: (12, 3)
+    Loaded experimental data for kelsic_Round3.xlsx: (12, 3)
+    Loaded experimental data for kelsic_Round4.xlsx: (12, 3)
+    iteration shape: (48, 2)
+    Labels shape: (1369, 5)
+    Embeddings and labels are aligned
+    (1321,)
+    
+    Tested variants in this round: 48
+    18       M1W
+    43       K3F
+    59       E4C
+    61       E4F
+    63       E4H
+    64       E4I
+    66       E4L
+    67       E4M
+    68       E4N
+    70       E4Q
+    73       E4T
+    74       E4V
+    75       E4W
+    76       E4Y
+    77       D5A
+    78       D5C
+    80       D5F
+    82       D5H
+    83       D5I
+    85       D5L
+    86       D5M
+    87       D5N
+    89       D5Q
+    91       D5S
+    92       D5T
+    93       D5V
+    95       D5Y
+    115      I7A
+    135      E8C
+    146      E8Q
+    184     Q10P
+    211     T12C
+    220     T12M
+    390     M21L
+    427     R23K
+    430     R23N
+    445     V24I
+    469     E25Q
+    496     E27C
+    503     E27L
+    504     E27M
+    507     E27Q
+    572     V31C
+    668     I36D
+    707     G38E
+    1087    T58E
+    1158    D61W
+    1332    S71C
+    Name: variant, dtype: object
+    
+    Top 12 variants predicted by the model:
+         variant    y_pred  y_actual  y_actual_scaled  y_actual_binary  \
+    72       E4S  0.978078       NaN              NaN              NaN   
+    94       D5W  0.977183       NaN              NaN              NaN   
+    69       E4P  0.973912       NaN              NaN              NaN   
+    1281    V68I  0.962484       NaN              NaN              NaN   
+    90       D5R  0.951873       NaN              NaN              NaN   
+    71       E4R  0.948736       NaN              NaN              NaN   
+    88       D5P  0.947673       NaN              NaN              NaN   
+    144      E8N  0.947493       NaN              NaN              NaN   
+    141      E8K  0.947032       NaN              NaN              NaN   
+    1034    V55I  0.945509       NaN              NaN              NaN   
+    616     T33I  0.944996       NaN              NaN              NaN   
+    470     E25R  0.944632       NaN              NaN              NaN   
+    
+         dist_metric  std_predictions  
+    72          None              0.0  
+    94          None              0.0  
+    69          None              0.0  
+    1281        None              0.0  
+    90          None              0.0  
+    71          None              0.0  
+    88          None              0.0  
+    144         None              0.0  
+    141         None              0.0  
+    1034        None              0.0  
+    616         None              0.0  
+    470         None              0.0  
+    
+    Data saved to ./kelsic/Round4
+
+
+    /data/chaofan/software/EvolvePro/evolvepro/src/model.py:200: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+      df_all = pd.concat([df_train, df_test])
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h4 id="2-3-5-Round5"><a href="#2-3-5-Round5" class="headerlink" title="2.3.5 Round5"></a>2.3.5 Round5</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">round_name <span class="token operator">=</span> <span class="token string">'Round5'</span>
+round_file_names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'kelsic_Round1.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round2.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round3.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round4.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round5.xlsx'</span><span class="token punctuation">]</span>
+
+this_round_variants<span class="token punctuation">,</span> df_test<span class="token punctuation">,</span> df_sorted_all <span class="token operator">=</span> evolve_experimental<span class="token punctuation">(</span>
+    protein_name<span class="token punctuation">,</span>
+    round_name<span class="token punctuation">,</span>
+    embeddings_base_path<span class="token punctuation">,</span>
+    embeddings_file_name<span class="token punctuation">,</span>
+    round_base_path<span class="token punctuation">,</span>
+    round_file_names<span class="token punctuation">,</span>
+    wt_fasta_path<span class="token punctuation">,</span>
+    rename_WT<span class="token punctuation">,</span>
+    number_of_variants<span class="token punctuation">,</span>
+    output_dir
+<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Processing kelsic - Round5
+   Embeddings loaded: (1369, 1280)
+   Loaded experimental data for kelsic_Round1.xlsx: (12, 3)
+   Loaded experimental data for kelsic_Round2.xlsx: (12, 3)
+   Loaded experimental data for kelsic_Round3.xlsx: (12, 3)
+   Loaded experimental data for kelsic_Round4.xlsx: (12, 3)
+   Loaded experimental data for kelsic_Round5.xlsx: (12, 3)
+   iteration shape: (60, 2)
+   Labels shape: (1369, 5)
+   Embeddings and labels are aligned
+   (1309,)
+   
+   Tested variants in this round: 60
+   18       M1W
+   43       K3F
+   58       E4A
+   59       E4C
+   61       E4F
+   63       E4H
+   64       E4I
+   66       E4L
+   67       E4M
+   68       E4N
+   69       E4P
+   70       E4Q
+   72       E4S
+   73       E4T
+   74       E4V
+   75       E4W
+   76       E4Y
+   77       D5A
+   78       D5C
+   80       D5F
+   82       D5H
+   83       D5I
+   85       D5L
+   86       D5M
+   87       D5N
+   88       D5P
+   89       D5Q
+   91       D5S
+   92       D5T
+   93       D5V
+   94       D5W
+   95       D5Y
+   115      I7A
+   135      E8C
+   137      E8F
+   139      E8H
+   141      E8K
+   146      E8Q
+   178     Q10H
+   184     Q10P
+   211     T12C
+   220     T12M
+   368     T20H
+   390     M21L
+   427     R23K
+   430     R23N
+   445     V24I
+   469     E25Q
+   496     E27C
+   503     E27L
+   504     E27M
+   507     E27Q
+   572     V31C
+   668     I36D
+   707     G38E
+   1034    V55I
+   1087    T58E
+   1158    D61W
+   1332    S71C
+   1339    S71K
+   Name: variant, dtype: object
+   
+   Top 12 variants predicted by the model:
+        variant    y_pred  y_actual  y_actual_scaled  y_actual_binary  \
+   114      N6Y  0.954242       NaN              NaN              NaN   
+   373     T20N  0.950471       NaN              NaN              NaN   
+   65       E4K  0.950415       NaN              NaN              NaN   
+   226     T12V  0.949447       NaN              NaN              NaN   
+   1281    V68I  0.947393       NaN              NaN              NaN   
+   464     E25K  0.947118       NaN              NaN              NaN   
+   71       E4R  0.946143       NaN              NaN              NaN   
+   144      E8N  0.940163       NaN              NaN              NaN   
+   628     A34C  0.937827       NaN              NaN              NaN   
+   1349    S71Y  0.936767       NaN              NaN              NaN   
+   1169    L62M  0.934671       NaN              NaN              NaN   
+   370     T20K  0.934475       NaN              NaN              NaN   
+   
+        dist_metric  std_predictions  
+   114         None              0.0  
+   373         None              0.0  
+   65          None              0.0  
+   226         None              0.0  
+   1281        None              0.0  
+   464         None              0.0  
+   71          None              0.0  
+   144         None              0.0  
+   628         None              0.0  
+   1349        None              0.0  
+   1169        None              0.0  
+   370         None              0.0  
+   
+   Data saved to ./kelsic/Round5
+
+
+   /data/chaofan/software/EvolvePro/evolvepro/src/model.py:200: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+     df_all = pd.concat([df_train, df_test])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="2-3-6-plot"><a href="#2-3-6-plot" class="headerlink" title="2.3.6 plot"></a>2.3.6 plot</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> evolvepro<span class="token punctuation">.</span>src<span class="token punctuation">.</span>plot <span class="token keyword">import</span> read_exp_data<span class="token punctuation">,</span> plot_variants_by_iteration
+
+round_base_path <span class="token operator">=</span> <span class="token string">'/data/chaofan/software/EvolvePro/colab/rounds_data'</span>
+round_file_names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'kelsic_Round1.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round2.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round3.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round4.xlsx'</span><span class="token punctuation">,</span> <span class="token string">'kelsic_Round5.xlsx'</span><span class="token punctuation">]</span>
+wt_fasta_path <span class="token operator">=</span> <span class="token string">"./kelsic_WT.fasta"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">df <span class="token operator">=</span> read_exp_data<span class="token punctuation">(</span>round_base_path<span class="token punctuation">,</span> round_file_names<span class="token punctuation">,</span> wt_fasta_path<span class="token punctuation">)</span>
+plot_variants_by_iteration<span class="token punctuation">(</span>df<span class="token punctuation">,</span> activity_column<span class="token operator">=</span><span class="token string">'activity'</span><span class="token punctuation">,</span> output_dir<span class="token operator">=</span>output_dir<span class="token punctuation">,</span> output_file<span class="token operator">=</span><span class="token string">"kelsic"</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pEv2D54"><img src="https://s21.ax1x.com/2025/05/18/pEv2D54.png" alt="pEv2D54.png"></a></p>
+<h2 id="3-代码实现-Deep-Mutational-Scanning-Workflow"><a href="#3-代码实现-Deep-Mutational-Scanning-Workflow" class="headerlink" title="3. 代码实现 (Deep Mutational Scanning Workflow)"></a>3. 代码实现 (Deep Mutational Scanning Workflow)</h2><p>DMS数据集包含具体的突变位点和表型数据，我们需要生成突变体文库对应的fasta和embedding特征矩阵，才能进行下游的迭代训练。</p>
+<h3 id="3-1-生成突变体序列和对应表型表格"><a href="#3-1-生成突变体序列和对应表型表格" class="headerlink" title="3.1 生成突变体序列和对应表型表格"></a>3.1 生成突变体序列和对应表型表格</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">!cp <span class="token operator">-</span>r <span class="token operator">/</span>data<span class="token operator">/</span>chaofan<span class="token operator">/</span>software<span class="token operator">/</span>EvolvePro<span class="token operator">/</span>data <span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>对<code>scripts/process/dms_process.py</code>代码的<code>project_root</code>进行修改</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pEvAZlQ"><img src="https://s21.ax1x.com/2025/05/16/pEvAZlQ.png" alt="pEvAZlQ.png"></a></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">!python <span class="token operator">/</span>data<span class="token operator">/</span>chaofan<span class="token operator">/</span>software<span class="token operator">/</span>EvolvePro<span class="token operator">/</span>scripts<span class="token operator">/</span>process<span class="token operator">/</span>dms_process<span class="token punctuation">.</span>py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pEvAmOs"><img src="https://s21.ax1x.com/2025/05/16/pEvAmOs.png" alt="pEvAmOs.png"></a></p>
+<h3 id="3-2-获取氨基酸序列的embedding特征矩阵"><a href="#3-2-获取氨基酸序列的embedding特征矩阵" class="headerlink" title="3.2 获取氨基酸序列的embedding特征矩阵"></a>3.2 获取氨基酸序列的embedding特征矩阵</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">!sbatch esm2_650M_dms<span class="token punctuation">.</span>sh
+<span class="token comment"># 运行时大概占3G显存</span>
+<span class="token comment"># 这一步运行时间非常长</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><div class="caption"><span>esm2_650M_dms.sh</span></div><code class="language-shell">#!&#x2F;bin&#x2F;bash
+# Configuration values for SLURM job submission.
+# One leading hash ahead of the word SBATCH is not a comment, but two are.
+#SBATCH --job-name&#x3D;esm
+#SBATCH --gres&#x3D;gpu:1
+#SBATCH --cpus-per-task&#x3D;1   
+#SBATCH --mem&#x3D;200gb  
+#SBATCH --output out&#x2F;esm-%j.out 
+
+study_names&#x3D;(&quot;brenan&quot; &quot;jones&quot; &quot;stiffler&quot; &quot;haddox&quot; &quot;doud&quot; &quot;giacomelli&quot; &quot;kelsic&quot; &quot;lee&quot; &quot;markin&quot; &quot;cas12f&quot; &quot;cov2_S&quot; &quot;zikv_E&quot;)
+model_names&#x3D;(&quot;esm2_t33_650M_UR50D&quot;)
+fasta_path&#x3D;&quot;output&#x2F;dms&#x2F;&quot;
+results_path&#x3D;&quot;output&#x2F;plm&#x2F;esm&#x2F;&quot;
+
+repr_layers&#x3D;33
+toks_per_batch&#x3D;2000
+
+mkdir -p $&#123;results_path&#125;
+
+for model_name in &quot;$&#123;model_names[@]&#125;&quot;; do
+  for study in &quot;$&#123;study_names[@]&#125;&quot;; do
+    command&#x3D;&quot;python3 &#x2F;data&#x2F;chaofan&#x2F;software&#x2F;EvolvePro&#x2F;evolvepro&#x2F;plm&#x2F;esm&#x2F;extract.py $&#123;model_name&#125;.pt $&#123;fasta_path&#125;$&#123;study&#125;.fasta $&#123;results_path&#125;$&#123;study&#125;&#x2F;$&#123;model_name&#125; --toks_per_batch $&#123;toks_per_batch&#125; --include mean --concatenate_dir $&#123;results_path&#125;&quot;
+    echo &quot;Running command: $&#123;command&#125;&quot;
+    eval &quot;$&#123;command&#125;&quot;
+  done
+done<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pEvuqRP"><img src="https://s21.ax1x.com/2025/05/17/pEvuqRP.png" alt="pEvuqRP.png"></a></p>
+<h3 id="3-3-DMS数据验证定向进化"><a href="#3-3-DMS数据验证定向进化" class="headerlink" title="3.3 DMS数据验证定向进化"></a>3.3 DMS数据验证定向进化</h3><p>因为我们输入的是<code>$&#123;model_name&#125;.pt</code>文件，会导致输出文件名都变为<code>$&#123;dataset_name&#125;_esm2_t33_650M_UR50D.pt.csv</code>，但是后续文件的输入又要求是<code>$&#123;dataset_name&#125;_esm2_t33_650M_UR50D.csv</code>，需要进行文件名的批量修改再进行下一步。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">!ls output<span class="token operator">/</span>plm<span class="token operator">/</span>esm<span class="token operator">/</span><span class="token operator">*</span><span class="token punctuation">.</span>csv <span class="token operator">|</span> <span class="token keyword">while</span> read line<span class="token punctuation">;</span> do re_name<span class="token operator">=</span>`echo $line<span class="token operator">|</span>cut <span class="token operator">-</span>d <span class="token string">"/"</span> <span class="token operator">-</span>f4<span class="token operator">|</span>cut <span class="token operator">-</span>d <span class="token string">"."</span> <span class="token operator">-</span>f1`<span class="token punctuation">;</span> mv $<span class="token punctuation">&#123;</span>line<span class="token punctuation">&#125;</span> output<span class="token operator">/</span>plm<span class="token operator">/</span>esm<span class="token operator">/</span>$<span class="token punctuation">&#123;</span>re_name<span class="token punctuation">&#125;</span><span class="token punctuation">.</span>csv<span class="token punctuation">;</span> done<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">!sbatch esm2_650M<span class="token punctuation">.</span>sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><div class="caption"><span>esm2_650M.sh</span></div><code class="language-shell">#!&#x2F;bin&#x2F;bash
+# Configuration values for SLURM job submission.
+# One leading hash ahead of the word SBATCH is not a comment, but two are.
+#SBATCH --time&#x3D;12:00:00 
+#SBATCH --job-name&#x3D;esm2_650M_optimal
+#SBATCH -n 12
+#SBATCH -N 1   
+#SBATCH --cpus-per-task&#x3D;5  
+#SBATCH --mem&#x3D;20gb  
+#SBATCH --output out&#x2F;esm2_650M_optimal-%j.out 
+
+source ~&#x2F;.bashrc
+conda activate evolvepro
+# module load openmind8&#x2F;gnu-parallel&#x2F;20240222
+
+datasets&#x3D;(&quot;brenan&quot; &quot;stiffler&quot; &quot;doud&quot; &quot;haddox&quot; &quot;giacomelli&quot; &quot;jones&quot; &quot;kelsic&quot; &quot;lee&quot; &quot;markin&quot; &quot;zikv_E&quot; &quot;cas12f&quot; &quot;cov2_S&quot;)
+
+# Function to run dms_main for a given dataset
+run_dms_main() &#123;
+    dataset_name&#x3D;$1
+    output_file&#x3D;&quot;out&#x2F;$&#123;dataset_name&#125;-esm2_650M_optimal.out&quot;
+
+    echo &quot;Running $&#123;dataset_name&#125; dataset:&quot; &gt; $&#123;output_file&#125;
+    python3 -u &#x2F;data&#x2F;chaofan&#x2F;software&#x2F;EvolvePro&#x2F;scripts&#x2F;dms&#x2F;dms_main.py \
+        --dataset_name $&#123;dataset_name&#125; \
+        --experiment_name &quot;esm2_650M_optimal&quot; \
+        --model_name &quot;esm2_t33_650M_UR50D&quot; \
+        --embeddings_path &quot;.&#x2F;output&#x2F;plm&#x2F;esm&quot; \
+        --labels_path &quot;.&#x2F;output&#x2F;dms&quot; \
+        --num_simulations 10 \
+        --num_iterations 10 \
+        --measured_var &quot;activity&quot; \
+        --learning_strategies &quot;topn&quot; \
+        --num_mutants_per_round 16 \
+        --num_final_round_mutants 16 \
+        --first_round_strategies &quot;random&quot; \
+        --embedding_types &quot;embeddings&quot; \
+        --regression_types &quot;randomforest&quot; \
+        --embeddings_file_type &quot;csv&quot; \
+        --output_dir &quot;.&#x2F;output&#x2F;dms_results&quot; \
+        &gt;&gt; $&#123;output_file&#125; 2&gt;&amp;1
+    echo &quot;Done running $&#123;dataset_name&#125; dataset:&quot; &gt;&gt; $&#123;output_file&#125;
+&#125;
+
+# Export the function so it&#39;s available to GNU Parallel
+export -f run_dms_main
+
+# Use GNU Parallel to run the dms_main function in parallel for each dataset
+parallel -j12 run_dms_main ::: &quot;$&#123;datasets[@]&#125;&quot;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pEvKno9"><img src="https://s21.ax1x.com/2025/05/17/pEvKno9.png" alt="pEvKno9.png"></a></p>
+<p>这是其中一个结果表格，还是很清晰的。原文主要利用DMS数据集中大量的突变体和对应的表型数据进行方法可行性的验证，当然也可以从DMS大量的数据基础上去探索更广阔的突变空间。</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pEv1RBT"><img src="https://s21.ax1x.com/2025/05/17/pEv1RBT.png" alt="pEv1RBT.png"></a></p>
+<p>&emsp;&emsp;好了，你已经学会了目前最热门的借助深度学习辅助定向进化进行蛋白分子的理性设计。</p>
+<center><span style="color:#ff0000;">本人能力有限，难免出现错误，恳请批评指正</span></center>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">zhangchaofan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://zhangchaofan01.gitee.io/2025/04/15/evolvepro-directed-evolution/">https://zhangchaofan01.gitee.io/2025/04/15/evolvepro-directed-evolution/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">zhangchaofan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Deep-Learning/">
+                                    <span class="chip bg-color">Deep Learning</span>
+                                </a>
+                            
+                                <a href="/tags/Directed-evolution/">
+                                    <span class="chip bg-color">Directed evolution</span>
+                                </a>
+                            
+                                <a href="/tags/Molecular-design/">
+                                    <span class="chip bg-color">Molecular design</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg1.webp") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'QHvKVyB4LA2Ds9UxY8p2cCBv-gzGzoHsz',
+        appKey: '4eMYY2viJug47FfkfPgz0HBG',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'identicon',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '欢迎指点江山😀，留下你的评论，我一直都在哦！'
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2025/06/02/hzau-rna-seq/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/plant/11.jpg" class="responsive-img" alt="hzau_RNA-seq">
+                        
+                        <span class="card-title">hzau_RNA-seq</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-06-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhangchaofan
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/Pipeline/">
+                        <span class="chip bg-color">Pipeline</span>
+                    </a>
+                    
+                    <a href="/tags/RNA-seq/">
+                        <span class="chip bg-color">RNA-seq</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/01/09/read-fasta-file/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/plant/8.webp" class="responsive-img" alt="Read Fasta File">
+                        
+                        <span class="card-title">Read Fasta File</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-01-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhangchaofan
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Bioinformatics/">
+                        <span class="chip bg-color">Bioinformatics</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2032721327"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2025</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">zhangchaofan</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">46.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "3";
+                    var startDate = "09";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/chaofan520" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2439555626@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2439555626" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2439555626" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=ZHCHFH27" class="tooltipped" target="_blank" data-tooltip="微信联系我: ZHCHFH27" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+	
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    <!-- 
+     -->
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+     
+    <script src="/js/cursor.js"></script>
+    <script src="/js/FunnyTitle.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> 
+    <!-- 动态线条背景
+    <script type="text/javascript"
+    color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script> -->
+    
+    <script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script>
+    
+</body>
+
+</html>
