@@ -1,0 +1,2120 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="alphafold2_install, zhangchaofan&#39;s blog">
+    <meta name="description" content="分享生活，分享知识">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
+    
+    <style>
+        
+        #waifu{
+            left: auto !important;
+            right: 440px !important;
+        }
+    </style>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>alphafold2_install | zhangchaofan&#39;s blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="zhangchaofan's blog" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+        <!-- 元宵节灯笼样式开始 -->
+<style>
+    @media only screen and (min-width: 1124px) {
+        .nav-menu {
+            padding-right: 96px;
+        }
+    }
+    @media only screen and (max-width: 760px) {
+        .deng-box, .deng-box1 {
+            width: 40%;
+        }
+        .right {
+            float: left!important;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .right {
+            float: left!important;
+        }
+    }
+    .deng-box {
+        position: fixed;
+        top: -40px;
+        right: -20px;
+        z-index: 999;
+    }
+    .deng-box1 {
+        position: fixed;
+        top: -30px;
+        right: 10px;
+        z-index: 999;
+    }
+    .deng-box1 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 5s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+    }
+    .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 3s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+    }
+    .deng-a {
+        width: 100px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: 12px 8px 8px 10px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    .deng-b {
+        width: 45px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: -4px 8px 8px 26px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    .xian {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        width: 2px;
+        height: 20px;
+        background: #dc8f03;
+    }
+    .shui-a {
+        position: relative;
+        width: 5px;
+        height: 20px;
+        margin: -5px 0 0 59px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        -webkit-transform-origin: 50% -45px;
+        background: #ffa500;
+        border-radius: 0 0 5px 5px;
+    }
+    .shui-b {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        background: #dc8f03;
+        border-radius: 50%;
+    }
+    .shui-c {
+        position: absolute;
+        top: 18px;
+        left: -2px;
+        width: 10px;
+        height: 35px;
+        background: #ffa500;
+        border-radius: 0 0 0 5px;
+    }
+    .deng:before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    .deng:after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    @font-face {
+        font-family: "华文行楷";
+        src: url('/fonts/华文行楷.ttf');
+    }
+    .deng-t {
+        font-family: 华文行楷;
+        font-size: 26px;
+        color: #dc8f03;
+        font-weight: bold;
+        line-height: 44px;
+        text-align: center;
+    }
+    .night .deng-t,
+    .night .deng-box,
+    .night .deng-box1 {
+        background: transparent !important;
+    }
+    @-moz-keyframes swing {
+        0% {
+                -moz-transform: rotate(-10deg)
+        }
+        50% {
+             -moz-transform: rotate(10deg)
+        }
+        100% {
+                -moz-transform: rotate(-10deg)
+        }
+    }
+    @-webkit-keyframes swing {
+        0% {
+                -webkit-transform: rotate(-10deg)
+        }
+        50% {
+                -webkit-transform: rotate(10deg)
+        }
+        100% {
+                -webkit-transform: rotate(-10deg)
+        }
+    }
+</style>
+<div class="deng-box">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">喜迎</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+<div class="deng-box1">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">新春</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+<!-- 元宵节灯笼样式结束 -->
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/favicon.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">zhangchaofan&#39;s blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>联系我</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-location-arrow" style="zoom: 0.6;"></i>
+      
+      <span>导航</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/navigate">
+          
+          <i class="fas fa-location-arrow" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>导航</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/home">
+          
+          <i class="fas fa-home" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>首页</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/music">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/box">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>聚宝盒</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/favicon.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">zhangchaofan&#39;s blog</div>
+        <div class="logo-desc">
+            
+            分享生活，分享知识
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			联系我
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-location-arrow"></i>
+			
+			导航
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/navigate " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-location-arrow" style="position: absolute;left:50px" ></i>
+			      
+		          <span>导航</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/home " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-home" style="position: absolute;left:50px" ></i>
+			      
+		          <span>首页</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/music " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/box " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>聚宝盒</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/plant/8.webp')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">alphafold2_install</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Deep-Learning/">
+                                <span class="chip bg-color">Deep Learning</span>
+                            </a>
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-10-18
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2024-10-18
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    19 分
+                </div>
+                
+
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>原始的AlphaFold2需要docker环境，目前我们服务器还没有配置docker，就先用conda环境替代吧。</p>
+<h2 id="1-软件下载"><a href="#1-软件下载" class="headerlink" title="1.软件下载"></a>1.软件下载</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git clone https:&#x2F;&#x2F;github.com&#x2F;kalininalab&#x2F;alphafold_non_docker.git
+
+wget https:&#x2F;&#x2F;github.com&#x2F;google-deepmind&#x2F;alphafold&#x2F;archive&#x2F;refs&#x2F;tags&#x2F;v2.3.2.tar.gz
+tar -zxvf v2.3.2.tar.gz
+
+# 环境配置建议参考alphafold_non_docker里的README.md，特别注意CUDA版本相关的包
+conda create -n alphafold2
+conda activate alphafold2
+conda install -y -c conda-forge openmm&#x3D;8.0.0 pdbfixer python&#x3D;3.10 -c conda-forge
+conda install nvidia&#x2F;label&#x2F;cuda-12.4.0::cuda-toolkit 
+conda install cudnn&#x3D;8.9.2.26&#x3D;cuda12_0 -c nvidia
+conda install -y -c bioconda hmmer hhsuite&#x3D;&#x3D;3.3.0 kalign2 cudnn&#x3D;8.9
+pip install absl-py&#x3D;&#x3D;1.0.0 biopython&#x3D;&#x3D;1.79 chex&#x3D;&#x3D;0.0.7 dm-haiku&#x3D;&#x3D;0.0.13 dm-tree&#x3D;&#x3D;0.1.6 immutabledict&#x3D;&#x3D;2.0.0 ml-collections&#x3D;&#x3D;0.1.0 numpy&#x3D;&#x3D;1.22 pandas&#x3D;&#x3D;1.3.4 protobuf&#x3D;&#x3D;3.20.1 scipy&#x3D;&#x3D;1.11.4 tensorflow-cpu&#x3D;&#x3D;2.9.0
+pip3 install --upgrade --no-cache-dir jax&#x3D;&#x3D;0.4.23 jaxlib&#x3D;&#x3D;0.4.23+cuda12.cudnn89 -f https:&#x2F;&#x2F;storage.googleapis.com&#x2F;jax-releases&#x2F;jax_cuda_releases.html
+
+# 下载依赖数据库(非常大)
+bash alphafold_non_docker&#x2F;download_db.sh -d database<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>安装的时候非常混乱，这里给出我的环境，基于<code>CUDA12.4</code>, 可以直接通过<code>conda</code>安装：<br><code>conda env create -f alphafold2.yml</code></p>
+<pre class="line-numbers language-shell" data-language="shell"><div class="caption"><span>alphafold2.yml(CUDA12.4)</span></div><code class="language-shell">name: alphafold2
+channels:
+  - bioconda
+  - nvidia
+  - nvidia&#x2F;label&#x2F;cuda-12.4.0
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex&#x3D;0.1&#x3D;conda_forge
+  - _openmp_mutex&#x3D;4.5&#x3D;2_gnu
+  - bzip2&#x3D;1.0.8&#x3D;h4bc722e_7
+  - ca-certificates&#x3D;2024.9.24&#x3D;h06a4308_0
+  - cuda-cccl&#x3D;12.4.99&#x3D;0
+  - cuda-command-line-tools&#x3D;12.4.0&#x3D;0
+  - cuda-compiler&#x3D;12.4.0&#x3D;0
+  - cuda-cudart&#x3D;12.4.99&#x3D;0
+  - cuda-cudart-dev&#x3D;12.4.99&#x3D;0
+  - cuda-cudart-static&#x3D;12.4.99&#x3D;0
+  - cuda-cuobjdump&#x3D;12.4.99&#x3D;0
+  - cuda-cupti&#x3D;12.4.99&#x3D;0
+  - cuda-cupti-static&#x3D;12.4.99&#x3D;0
+  - cuda-cuxxfilt&#x3D;12.4.99&#x3D;0
+  - cuda-documentation&#x3D;12.4.99&#x3D;0
+  - cuda-driver-dev&#x3D;12.4.99&#x3D;0
+  - cuda-gdb&#x3D;12.4.99&#x3D;0
+  - cuda-libraries&#x3D;12.4.0&#x3D;0
+  - cuda-libraries-dev&#x3D;12.4.0&#x3D;0
+  - cuda-libraries-static&#x3D;12.4.0&#x3D;0
+  - cuda-nsight&#x3D;12.4.99&#x3D;0
+  - cuda-nsight-compute&#x3D;12.4.0&#x3D;0
+  - cuda-nvcc&#x3D;12.4.99&#x3D;0
+  - cuda-nvdisasm&#x3D;12.4.99&#x3D;0
+  - cuda-nvml-dev&#x3D;12.4.99&#x3D;0
+  - cuda-nvprof&#x3D;12.4.99&#x3D;0
+  - cuda-nvprune&#x3D;12.4.99&#x3D;0
+  - cuda-nvrtc&#x3D;12.4.99&#x3D;0
+  - cuda-nvrtc-dev&#x3D;12.4.99&#x3D;0
+  - cuda-nvrtc-static&#x3D;12.4.99&#x3D;0
+  - cuda-nvtx&#x3D;12.4.99&#x3D;0
+  - cuda-nvvp&#x3D;12.4.99&#x3D;0
+  - cuda-opencl&#x3D;12.4.99&#x3D;0
+  - cuda-opencl-dev&#x3D;12.4.99&#x3D;0
+  - cuda-profiler-api&#x3D;12.4.99&#x3D;0
+  - cuda-sanitizer-api&#x3D;12.4.99&#x3D;0
+  - cuda-toolkit&#x3D;12.4.0&#x3D;0
+  - cuda-tools&#x3D;12.4.0&#x3D;0
+  - cuda-version&#x3D;12.6&#x3D;3
+  - cuda-visual-tools&#x3D;12.4.0&#x3D;0
+  - cudnn&#x3D;8.9.2.26&#x3D;cuda12_0
+  - gds-tools&#x3D;1.9.0.20&#x3D;0
+  - hhsuite&#x3D;3.3.0&#x3D;py310pl5321hc31ed2c_13
+  - hmmer&#x3D;3.4&#x3D;hdbdd923_2
+  - kalign2&#x3D;2.04&#x3D;h031d066_7
+  - ld_impl_linux-64&#x3D;2.43&#x3D;h712a8e2_1
+  - libblas&#x3D;3.9.0&#x3D;24_linux64_openblas
+  - libcblas&#x3D;3.9.0&#x3D;24_linux64_openblas
+  - libcublas&#x3D;12.4.2.65&#x3D;0
+  - libcublas-dev&#x3D;12.4.2.65&#x3D;0
+  - libcublas-static&#x3D;12.4.2.65&#x3D;0
+  - libcufft&#x3D;11.2.0.44&#x3D;0
+  - libcufft-dev&#x3D;11.2.0.44&#x3D;0
+  - libcufft-static&#x3D;11.2.0.44&#x3D;0
+  - libcufile&#x3D;1.9.0.20&#x3D;0
+  - libcufile-dev&#x3D;1.9.0.20&#x3D;0
+  - libcufile-static&#x3D;1.9.0.20&#x3D;0
+  - libcurand&#x3D;10.3.5.119&#x3D;0
+  - libcurand-dev&#x3D;10.3.5.119&#x3D;0
+  - libcurand-static&#x3D;10.3.5.119&#x3D;0
+  - libcusolver&#x3D;11.6.0.99&#x3D;0
+  - libcusolver-dev&#x3D;11.6.0.99&#x3D;0
+  - libcusolver-static&#x3D;11.6.0.99&#x3D;0
+  - libcusparse&#x3D;12.3.0.142&#x3D;0
+  - libcusparse-dev&#x3D;12.3.0.142&#x3D;0
+  - libcusparse-static&#x3D;12.3.0.142&#x3D;0
+  - libffi&#x3D;3.4.2&#x3D;h7f98852_5
+  - libgcc&#x3D;14.2.0&#x3D;h77fa898_1
+  - libgcc-ng&#x3D;14.2.0&#x3D;h69a702a_1
+  - libgfortran&#x3D;14.2.0&#x3D;h69a702a_1
+  - libgfortran-ng&#x3D;14.2.0&#x3D;h69a702a_1
+  - libgfortran5&#x3D;14.2.0&#x3D;hd5240d6_1
+  - libgomp&#x3D;14.2.0&#x3D;h77fa898_1
+  - liblapack&#x3D;3.9.0&#x3D;24_linux64_openblas
+  - libnpp&#x3D;12.2.5.2&#x3D;0
+  - libnpp-dev&#x3D;12.2.5.2&#x3D;0
+  - libnpp-static&#x3D;12.2.5.2&#x3D;0
+  - libnsl&#x3D;2.0.1&#x3D;hd590300_0
+  - libnvfatbin&#x3D;12.4.99&#x3D;0
+  - libnvfatbin-dev&#x3D;12.4.99&#x3D;0
+  - libnvjitlink&#x3D;12.4.99&#x3D;0
+  - libnvjitlink-dev&#x3D;12.4.99&#x3D;0
+  - libnvjpeg&#x3D;12.3.1.89&#x3D;0
+  - libnvjpeg-dev&#x3D;12.3.1.89&#x3D;0
+  - libnvjpeg-static&#x3D;12.3.1.89&#x3D;0
+  - libopenblas&#x3D;0.3.27&#x3D;pthreads_hac2b453_1
+  - libsqlite&#x3D;3.46.1&#x3D;hadc24fc_0
+  - libstdcxx&#x3D;14.2.0&#x3D;hc0a3c3a_1
+  - libstdcxx-ng&#x3D;14.2.0&#x3D;h4852527_1
+  - libuuid&#x3D;2.38.1&#x3D;h0b41bf4_0
+  - libxcrypt&#x3D;4.4.36&#x3D;hd590300_1
+  - libzlib&#x3D;1.3.1&#x3D;hb9d3cd8_2
+  - ncurses&#x3D;6.5&#x3D;he02047a_1
+  - nsight-compute&#x3D;2024.1.0.13&#x3D;0
+  - ocl-icd&#x3D;2.3.2&#x3D;hd590300_1
+  - ocl-icd-system&#x3D;1.0.0&#x3D;1
+  - openmm&#x3D;8.0.0&#x3D;py310h9995159_4
+  - openssl&#x3D;3.3.2&#x3D;hb9d3cd8_0
+  - pdbfixer&#x3D;1.9&#x3D;pyh1a96a4e_0
+  - perl&#x3D;5.32.1&#x3D;0_h5eee18b_perl5
+  - pip&#x3D;24.2&#x3D;pyh8b19718_1
+  - python&#x3D;3.10.15&#x3D;h4a871b0_2_cpython
+  - python_abi&#x3D;3.10&#x3D;5_cp310
+  - readline&#x3D;8.2&#x3D;h8228510_1
+  - setuptools&#x3D;75.1.0&#x3D;pyhd8ed1ab_0
+  - tk&#x3D;8.6.13&#x3D;noxft_h4845f30_101
+  - tzdata&#x3D;2024b&#x3D;hc8b5060_0
+  - wheel&#x3D;0.44.0&#x3D;pyhd8ed1ab_0
+  - xz&#x3D;5.2.6&#x3D;h166bdaf_0
+  - pip:
+      - absl-py&#x3D;&#x3D;1.0.0
+      - astunparse&#x3D;&#x3D;1.6.3
+      - biopython&#x3D;&#x3D;1.79
+      - cachetools&#x3D;&#x3D;5.5.0
+      - certifi&#x3D;&#x3D;2024.8.30
+      - charset-normalizer&#x3D;&#x3D;3.4.0
+      - chex&#x3D;&#x3D;0.0.7
+      - contextlib2&#x3D;&#x3D;21.6.0
+      - dm-haiku&#x3D;&#x3D;0.0.13
+      - dm-tree&#x3D;&#x3D;0.1.6
+      - flatbuffers&#x3D;&#x3D;1.12
+      - gast&#x3D;&#x3D;0.4.0
+      - google-auth&#x3D;&#x3D;2.35.0
+      - google-auth-oauthlib&#x3D;&#x3D;0.4.6
+      - google-pasta&#x3D;&#x3D;0.2.0
+      - grpcio&#x3D;&#x3D;1.67.0
+      - h5py&#x3D;&#x3D;3.12.1
+      - idna&#x3D;&#x3D;3.10
+      - immutabledict&#x3D;&#x3D;2.0.0
+      - jax&#x3D;&#x3D;0.4.23
+      - jaxlib&#x3D;&#x3D;0.4.23+cuda12.cudnn89
+      - jmp&#x3D;&#x3D;0.0.4
+      - keras&#x3D;&#x3D;2.9.0
+      - keras-preprocessing&#x3D;&#x3D;1.1.2
+      - libclang&#x3D;&#x3D;18.1.1
+      - markdown&#x3D;&#x3D;3.7
+      - markupsafe&#x3D;&#x3D;3.0.1
+      - ml-collections&#x3D;&#x3D;0.1.0
+      - ml-dtypes&#x3D;&#x3D;0.5.0
+      - numpy&#x3D;&#x3D;1.22.0
+      - oauthlib&#x3D;&#x3D;3.2.2
+      - opt-einsum&#x3D;&#x3D;3.4.0
+      - packaging&#x3D;&#x3D;24.1
+      - pandas&#x3D;&#x3D;1.3.4
+      - protobuf&#x3D;&#x3D;3.20.1
+      - pyasn1&#x3D;&#x3D;0.6.1
+      - pyasn1-modules&#x3D;&#x3D;0.4.1
+      - python-dateutil&#x3D;&#x3D;2.9.0.post0
+      - pytz&#x3D;&#x3D;2024.2
+      - pyyaml&#x3D;&#x3D;6.0.2
+      - requests&#x3D;&#x3D;2.32.3
+      - requests-oauthlib&#x3D;&#x3D;2.0.0
+      - rsa&#x3D;&#x3D;4.9
+      - scipy&#x3D;&#x3D;1.11.4
+      - six&#x3D;&#x3D;1.16.0
+      - tabulate&#x3D;&#x3D;0.9.0
+      - tensorboard&#x3D;&#x3D;2.9.0
+      - tensorboard-data-server&#x3D;&#x3D;0.6.1
+      - tensorboard-plugin-wit&#x3D;&#x3D;1.8.1
+      - tensorflow-cpu&#x3D;&#x3D;2.9.0
+      - tensorflow-estimator&#x3D;&#x3D;2.9.0
+      - tensorflow-io-gcs-filesystem&#x3D;&#x3D;0.37.1
+      - termcolor&#x3D;&#x3D;2.5.0
+      - toolz&#x3D;&#x3D;1.0.0
+      - typing-extensions&#x3D;&#x3D;4.12.2
+      - urllib3&#x3D;&#x3D;2.2.3
+      - werkzeug&#x3D;&#x3D;3.0.4
+      - wrapt&#x3D;&#x3D;1.16.0
+prefix: &#x2F;data&#x2F;chaofan&#x2F;miniconda3&#x2F;envs&#x2F;alphafold2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这个是我之前基于<code>CUDA11.6</code>的环境：</p>
+<pre class="line-numbers language-shell" data-language="shell"><div class="caption"><span>alphafold2.yml(CUDA11.6)</span></div><code class="language-shell">name: alphafold2
+channels:
+  - nvidia
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex&#x3D;0.1&#x3D;main
+  - _openmp_mutex&#x3D;5.1&#x3D;1_gnu
+  - blas&#x3D;1.0&#x3D;mkl
+  - ca-certificates&#x3D;2023.7.22&#x3D;hbcca054_0
+  - cuda-nvcc&#x3D;11.6.124&#x3D;hbba6d2d_0
+  - cudatoolkit&#x3D;11.2.2&#x3D;hbe64b41_10
+  - fftw&#x3D;3.3.9&#x3D;h27cfd23_1
+  - hhsuite&#x3D;3.3.0&#x3D;py38pl5321h8ded8fe_5
+  - hmmer&#x3D;3.3.2&#x3D;h87f3376_2
+  - intel-openmp&#x3D;2021.4.0&#x3D;h06a4308_3561
+  - kalign2&#x3D;2.04&#x3D;hec16e2b_3
+  - libedit&#x3D;3.1.20221030&#x3D;h5eee18b_0
+  - libffi&#x3D;3.2.1&#x3D;hf484d3e_1007
+  - libgcc-ng&#x3D;11.2.0&#x3D;h1234567_1
+  - libgomp&#x3D;11.2.0&#x3D;h1234567_1
+  - libnsl&#x3D;2.0.0&#x3D;h5eee18b_0
+  - libstdcxx-ng&#x3D;11.2.0&#x3D;h1234567_1
+  - mkl&#x3D;2021.4.0&#x3D;h06a4308_640
+  - mkl-service&#x3D;2.4.0&#x3D;py38h7f8727e_0
+  - mkl_fft&#x3D;1.3.1&#x3D;py38hd3c417c_0
+  - mkl_random&#x3D;1.2.2&#x3D;py38h51133e4_0
+  - ncurses&#x3D;6.4&#x3D;h6a678d5_0
+  - numpy-base&#x3D;1.24.3&#x3D;py38h31eccc5_0
+  - ocl-icd&#x3D;2.3.1&#x3D;h7f98852_0
+  - ocl-icd-system&#x3D;1.0.0&#x3D;1
+  - openmm&#x3D;7.5.1&#x3D;py38ha082873_1
+  - openssl&#x3D;1.1.1l&#x3D;h7f98852_0
+  - parallel&#x3D;20230922&#x3D;ha770c72_0
+  - pdbfixer&#x3D;1.7&#x3D;pyhd3deb0d_0
+  - perl&#x3D;5.32.1&#x3D;0_h5eee18b_perl5
+  - pip&#x3D;23.2.1&#x3D;py38h06a4308_0
+  - python&#x3D;3.8.0&#x3D;h0371630_2
+  - python_abi&#x3D;3.8&#x3D;2_cp38
+  - readline&#x3D;7.0&#x3D;h7b6447c_5
+  - setuptools&#x3D;68.0.0&#x3D;py38h06a4308_0
+  - six&#x3D;1.16.0&#x3D;pyhd3eb1b0_1
+  - sqlite&#x3D;3.33.0&#x3D;h62c20be_0
+  - tk&#x3D;8.6.12&#x3D;h1ccaba5_0
+  - wheel&#x3D;0.41.2&#x3D;py38h06a4308_0
+  - xz&#x3D;5.4.2&#x3D;h5eee18b_0
+  - zlib&#x3D;1.2.13&#x3D;h5eee18b_0
+  - pip:
+      - absl-py&#x3D;&#x3D;1.0.0
+      - alphapulldown&#x3D;&#x3D;0.30.7
+      - anyio&#x3D;&#x3D;4.0.0
+      - appdirs&#x3D;&#x3D;1.4.4
+      - argon2-cffi&#x3D;&#x3D;23.1.0
+      - argon2-cffi-bindings&#x3D;&#x3D;21.2.0
+      - arrow&#x3D;&#x3D;1.3.0
+      - asttokens&#x3D;&#x3D;2.4.0
+      - astunparse&#x3D;&#x3D;1.6.3
+      - async-lru&#x3D;&#x3D;2.0.4
+      - attrs&#x3D;&#x3D;23.1.0
+      - babel&#x3D;&#x3D;2.13.0
+      - backcall&#x3D;&#x3D;0.2.0
+      - beautifulsoup4&#x3D;&#x3D;4.12.2
+      - biopython&#x3D;&#x3D;1.78
+      - bleach&#x3D;&#x3D;6.1.0
+      - cachetools&#x3D;&#x3D;5.3.1
+      - certifi&#x3D;&#x3D;2023.7.22
+      - cffi&#x3D;&#x3D;1.16.0
+      - charset-normalizer&#x3D;&#x3D;3.3.0
+      - chex&#x3D;&#x3D;0.0.7
+      - comm&#x3D;&#x3D;0.1.4
+      - contextlib2&#x3D;&#x3D;21.6.0
+      - cycler&#x3D;&#x3D;0.12.1
+      - debugpy&#x3D;&#x3D;1.8.0
+      - decorator&#x3D;&#x3D;5.1.1
+      - defusedxml&#x3D;&#x3D;0.7.1
+      - dm-haiku&#x3D;&#x3D;0.0.9
+      - dm-tree&#x3D;&#x3D;0.1.6
+      - exceptiongroup&#x3D;&#x3D;1.1.3
+      - executing&#x3D;&#x3D;2.0.0
+      - fastjsonschema&#x3D;&#x3D;2.18.1
+      - flatbuffers&#x3D;&#x3D;1.12
+      - fqdn&#x3D;&#x3D;1.5.1
+      - gast&#x3D;&#x3D;0.4.0
+      - google-auth&#x3D;&#x3D;2.23.2
+      - google-auth-oauthlib&#x3D;&#x3D;0.4.6
+      - google-pasta&#x3D;&#x3D;0.2.0
+      - grpcio&#x3D;&#x3D;1.59.0
+      - h5py&#x3D;&#x3D;3.1.0
+      - idna&#x3D;&#x3D;3.4
+      - immutabledict&#x3D;&#x3D;2.0.0
+      - importlib-metadata&#x3D;&#x3D;6.8.0
+      - importlib-resources&#x3D;&#x3D;5.8.0
+      - ipykernel&#x3D;&#x3D;6.25.2
+      - ipython&#x3D;&#x3D;8.12.3
+      - ipywidgets&#x3D;&#x3D;8.1.1
+      - isoduration&#x3D;&#x3D;20.11.0
+      - jax&#x3D;&#x3D;0.3.25
+      - jaxlib&#x3D;&#x3D;0.3.25+cuda11.cudnn805
+      - jedi&#x3D;&#x3D;0.19.1
+      - jinja2&#x3D;&#x3D;3.1.2
+      - jmp&#x3D;&#x3D;0.0.4
+      - json5&#x3D;&#x3D;0.9.14
+      - jsonpointer&#x3D;&#x3D;2.4
+      - jsonschema&#x3D;&#x3D;4.19.1
+      - jsonschema-specifications&#x3D;&#x3D;2023.7.1
+      - jupyter-client&#x3D;&#x3D;8.4.0
+      - jupyter-core&#x3D;&#x3D;5.4.0
+      - jupyter-events&#x3D;&#x3D;0.7.0
+      - jupyter-lsp&#x3D;&#x3D;2.2.0
+      - jupyter-server&#x3D;&#x3D;2.7.3
+      - jupyter-server-terminals&#x3D;&#x3D;0.4.4
+      - jupyterlab&#x3D;&#x3D;4.0.7
+      - jupyterlab-pygments&#x3D;&#x3D;0.2.2
+      - jupyterlab-server&#x3D;&#x3D;2.25.0
+      - jupyterlab-widgets&#x3D;&#x3D;3.0.9
+      - keras&#x3D;&#x3D;2.9.0
+      - keras-preprocessing&#x3D;&#x3D;1.1.2
+      - kiwisolver&#x3D;&#x3D;1.4.5
+      - libclang&#x3D;&#x3D;16.0.6
+      - markdown&#x3D;&#x3D;3.4.4
+      - markupsafe&#x3D;&#x3D;2.1.3
+      - matplotlib&#x3D;&#x3D;3.3.3
+      - matplotlib-inline&#x3D;&#x3D;0.1.6
+      - mistune&#x3D;&#x3D;2.0.5
+      - ml-collections&#x3D;&#x3D;0.1.0
+      - ml-dtypes&#x3D;&#x3D;0.2.0
+      - nbclient&#x3D;&#x3D;0.8.0
+      - nbconvert&#x3D;&#x3D;7.4.0
+      - nbformat&#x3D;&#x3D;5.4.0
+      - nest-asyncio&#x3D;&#x3D;1.5.8
+      - notebook-shim&#x3D;&#x3D;0.2.3
+      - numpy&#x3D;&#x3D;1.21.6
+      - oauthlib&#x3D;&#x3D;3.2.2
+      - opt-einsum&#x3D;&#x3D;3.3.0
+      - overrides&#x3D;&#x3D;7.4.0
+      - packaging&#x3D;&#x3D;23.2
+      - pandas&#x3D;&#x3D;1.3.4
+      - pandocfilters&#x3D;&#x3D;1.5.0
+      - parso&#x3D;&#x3D;0.8.3
+      - pexpect&#x3D;&#x3D;4.8.0
+      - pickleshare&#x3D;&#x3D;0.7.5
+      - pillow&#x3D;&#x3D;10.0.1
+      - pkgutil-resolve-name&#x3D;&#x3D;1.3.10
+      - platformdirs&#x3D;&#x3D;3.11.0
+      - prometheus-client&#x3D;&#x3D;0.17.1
+      - prompt-toolkit&#x3D;&#x3D;3.0.39
+      - protobuf&#x3D;&#x3D;3.20.1
+      - psutil&#x3D;&#x3D;5.9.5
+      - ptyprocess&#x3D;&#x3D;0.7.0
+      - pure-eval&#x3D;&#x3D;0.2.2
+      - py3dmol&#x3D;&#x3D;2.0.1
+      - pyasn1&#x3D;&#x3D;0.5.0
+      - pyasn1-modules&#x3D;&#x3D;0.3.0
+      - pycparser&#x3D;&#x3D;2.21
+      - pygments&#x3D;&#x3D;2.16.1
+      - pyparsing&#x3D;&#x3D;3.1.1
+      - python-dateutil&#x3D;&#x3D;2.8.2
+      - python-json-logger&#x3D;&#x3D;2.0.7
+      - pytz&#x3D;&#x3D;2023.3.post1
+      - pyyaml&#x3D;&#x3D;6.0.1
+      - pyzmq&#x3D;&#x3D;25.1.1
+      - referencing&#x3D;&#x3D;0.30.2
+      - requests&#x3D;&#x3D;2.31.0
+      - requests-oauthlib&#x3D;&#x3D;1.3.1
+      - rfc3339-validator&#x3D;&#x3D;0.1.4
+      - rfc3986-validator&#x3D;&#x3D;0.1.1
+      - rpds-py&#x3D;&#x3D;0.10.6
+      - rsa&#x3D;&#x3D;4.9
+      - scipy&#x3D;&#x3D;1.7.0
+      - send2trash&#x3D;&#x3D;1.8.2
+      - sniffio&#x3D;&#x3D;1.3.0
+      - soupsieve&#x3D;&#x3D;2.5
+      - stack-data&#x3D;&#x3D;0.6.3
+      - tabulate&#x3D;&#x3D;0.9.0
+      - tensorboard&#x3D;&#x3D;2.9.0
+      - tensorboard-data-server&#x3D;&#x3D;0.6.1
+      - tensorboard-plugin-wit&#x3D;&#x3D;1.8.1
+      - tensorflow&#x3D;&#x3D;2.9.0
+      - tensorflow-cpu&#x3D;&#x3D;2.9.0
+      - tensorflow-estimator&#x3D;&#x3D;2.9.0
+      - tensorflow-io-gcs-filesystem&#x3D;&#x3D;0.34.0
+      - termcolor&#x3D;&#x3D;2.3.0
+      - terminado&#x3D;&#x3D;0.17.1
+      - tinycss2&#x3D;&#x3D;1.2.1
+      - tomli&#x3D;&#x3D;2.0.1
+      - toolz&#x3D;&#x3D;0.12.0
+      - tornado&#x3D;&#x3D;6.3.3
+      - tqdm&#x3D;&#x3D;4.66.1
+      - traitlets&#x3D;&#x3D;5.11.2
+      - types-python-dateutil&#x3D;&#x3D;2.8.19.14
+      - typing-extensions&#x3D;&#x3D;4.8.0
+      - uri-template&#x3D;&#x3D;1.3.0
+      - urllib3&#x3D;&#x3D;2.0.6
+      - wcwidth&#x3D;&#x3D;0.2.8
+      - webcolors&#x3D;&#x3D;1.13
+      - webencodings&#x3D;&#x3D;0.5.1
+      - websocket-client&#x3D;&#x3D;1.6.4
+      - werkzeug&#x3D;&#x3D;3.0.0
+      - widgetsnbextension&#x3D;&#x3D;4.0.9
+      - wrapt&#x3D;&#x3D;1.15.0
+      - zipp&#x3D;&#x3D;3.17.0
+prefix: &#x2F;data&#x2F;chaofan&#x2F;software&#x2F;miniconda3&#x2F;envs&#x2F;alphafold2
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="2-测试"><a href="#2-测试" class="headerlink" title="2.测试"></a>2.测试</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">scp alphafold_non_docker&#x2F;run_alphafold.sh alphafold-2.3.2&#x2F;
+
+# 修改下相关文件地址
+vi alphafold-2.3.2&#x2F;run_alphafold.sh
+
+# 
+bash alphafold-2.3.2&#x2F;run_alphafold.sh -c reduced_dbs -d .&#x2F;database&#x2F; -o .&#x2F;dummy_test&#x2F; -f t2.fa -t 2024-10-17 -m multimer -l 1 -n 40<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><div class="caption"><span>t2.fa</span></div><code class="language-txt">>Pip1
+VTEVPNSMDWRKRGSVTGVKDQGVCGCCWAFSAAAAIEGAYQIANNELISLSEQQLLDCSTQNKGCEGGLMTVAYDFLLQNNGGGITTETNYPYEEAQNVCKTEQPAAVTINGYEVVPSDESSLLKAVVNQPISVGIAANDEFHMYGSGIYDGSCNSRLNHAVTVIGYGTSEEDGTKYWIVKNSWGSDWGEEGYMRIARDVGVDGGHCGIAKVASFPTA
+>EpiC2B
+QLNGYSKKEVTPEDTELLQKAQSNVSAYNSDVTSRICYLKVDSLETQVVSGENYKFHVSGCSVNSDKELGGCANQNCESSKYDIVIYSQSWTNTLKVTSITPAN<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结果与我们之前在<code>CUDA11.6</code>版本上的一致，也与原文章结果一致。</p>
+<pre class="line-numbers language-shell" data-language="shell"><div class="caption"><span>result</span></div><code class="language-shell">&#123;
+    &quot;iptm+ptm&quot;: &#123;
+        &quot;model_1_multimer_v3_pred_0&quot;: 0.913495827158252,
+        &quot;model_2_multimer_v3_pred_0&quot;: 0.9082750066457126,
+        &quot;model_3_multimer_v3_pred_0&quot;: 0.9185924126209433,
+        &quot;model_4_multimer_v3_pred_0&quot;: 0.9199507589621323,
+        &quot;model_5_multimer_v3_pred_0&quot;: 0.9214059557649581
+    &#125;,
+    &quot;order&quot;: [
+        &quot;model_5_multimer_v3_pred_0&quot;,
+        &quot;model_4_multimer_v3_pred_0&quot;,
+        &quot;model_3_multimer_v3_pred_0&quot;,
+        &quot;model_1_multimer_v3_pred_0&quot;,
+        &quot;model_2_multimer_v3_pred_0&quot;
+    ]
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="3-安装过程中遇到的问题"><a href="#3-安装过程中遇到的问题" class="headerlink" title="3.安装过程中遇到的问题"></a>3.安装过程中遇到的问题</h2><p>1.</p>
+<blockquote>
+<p>Warning: importing ‘simtk.openmm’ is deprecated.  Import ‘openmm’ instead.<br>Traceback (most recent call last):<br>  File “/data/chaofan/software/alphafold2/alphafold-2.3.2/run_alphafold.py”, line 40, in <module><br>    from alphafold.relax import relax<br>  File “/data/chaofan/software/alphafold2/alphafold-2.3.2/alphafold/relax/relax.py”, line 18, in <module><br>    from alphafold.relax import amber_minimize<br>  File “/data/chaofan/software/alphafold2/alphafold-2.3.2/alphafold/relax/amber_minimize.py”, line 33, in <module><br>    from simtk.openmm.app.internal.pdbstructure import PdbStructure<br>ModuleNotFoundError: No module named ‘simtk.openmm.app.internal’   </p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/google-deepmind/alphafold/issues/410">https://github.com/google-deepmind/alphafold/issues/410</a>  </p>
+</blockquote>
+<p>2.</p>
+<blockquote>
+<p>Warning: importing ‘simtk.openmm’ is deprecated.  Import ‘openmm’ instead.<br>FATAL Flags parsing error: Unknown command line flag ‘run_relax’<br>Pass –helpshort or –helpfull to see help on flags.  </p>
+</blockquote>
+<blockquote>
+<p>删掉<code>run_alphafold.sh</code>文件中的<code>--run_relax=$run_relax</code></p>
+</blockquote>
+<p>3.</p>
+<blockquote>
+<p>AttributeError: module ‘jax’ has no attribute ‘xla’  </p>
+</blockquote>
+<blockquote>
+<p>pip install dm-haiku -U</p>
+</blockquote>
+<p>还有一种安装方法，自行配置CUDA驱动，参考<code>非root用户安装cuda与cudnn</code>,可以装个和<code>alphafold_non_docker</code>一样的CUDA的版本，配置conda启动时自动替换一些环境变量，可能就没那么麻烦了，这里只提供一种可能的方式，我没有试过。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">zhangchaofan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://zhangchaofan01.gitee.io/2024/10/18/alphafold2-install/">https://zhangchaofan01.gitee.io/2024/10/18/alphafold2-install/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">zhangchaofan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Deep-Learning/">
+                                    <span class="chip bg-color">Deep Learning</span>
+                                </a>
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg1.webp") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'QHvKVyB4LA2Ds9UxY8p2cCBv-gzGzoHsz',
+        appKey: '4eMYY2viJug47FfkfPgz0HBG',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'identicon',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '欢迎指点江山😀，留下你的评论，我一直都在哦！'
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2024/10/23/gpt-model/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/plant/9.webp" class="responsive-img" alt="GPT_model">
+                        
+                        <span class="card-title">GPT_model</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-23
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhangchaofan
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Deep-Learning/">
+                        <span class="chip bg-color">Deep Learning</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/10/10/slurm-dan-ji-bu-shu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/plant/5.jpg" class="responsive-img" alt="slurm单机部署">
+                        
+                        <span class="card-title">slurm单机部署</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhangchaofan
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2032721327"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2025</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">zhangchaofan</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">46.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "3";
+                    var startDate = "09";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/chaofan520" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2439555626@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2439555626" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2439555626" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=ZHCHFH27" class="tooltipped" target="_blank" data-tooltip="微信联系我: ZHCHFH27" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+	
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    <!-- 
+     -->
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+     
+    <script src="/js/cursor.js"></script>
+    <script src="/js/FunnyTitle.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> 
+    <!-- 动态线条背景
+    <script type="text/javascript"
+    color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script> -->
+    
+    <script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,2227 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="hzau_RNA-seq, zhangchaofan&#39;s blog">
+    <meta name="description" content="分享生活，分享知识">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
+    
+    <style>
+        
+        #waifu{
+            left: auto !important;
+            right: 440px !important;
+        }
+    </style>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>hzau_RNA-seq | zhangchaofan&#39;s blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="zhangchaofan's blog" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+        <!-- 元宵节灯笼样式开始 -->
+<style>
+    @media only screen and (min-width: 1124px) {
+        .nav-menu {
+            padding-right: 96px;
+        }
+    }
+    @media only screen and (max-width: 760px) {
+        .deng-box, .deng-box1 {
+            width: 40%;
+        }
+        .right {
+            float: left!important;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .right {
+            float: left!important;
+        }
+    }
+    .deng-box {
+        position: fixed;
+        top: -40px;
+        right: -20px;
+        z-index: 999;
+    }
+    .deng-box1 {
+        position: fixed;
+        top: -30px;
+        right: 10px;
+        z-index: 999;
+    }
+    .deng-box1 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 5s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+    }
+    .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 3s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+    }
+    .deng-a {
+        width: 100px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: 12px 8px 8px 10px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    .deng-b {
+        width: 45px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: -4px 8px 8px 26px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+    }
+    .xian {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        width: 2px;
+        height: 20px;
+        background: #dc8f03;
+    }
+    .shui-a {
+        position: relative;
+        width: 5px;
+        height: 20px;
+        margin: -5px 0 0 59px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        -webkit-transform-origin: 50% -45px;
+        background: #ffa500;
+        border-radius: 0 0 5px 5px;
+    }
+    .shui-b {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        background: #dc8f03;
+        border-radius: 50%;
+    }
+    .shui-c {
+        position: absolute;
+        top: 18px;
+        left: -2px;
+        width: 10px;
+        height: 35px;
+        background: #ffa500;
+        border-radius: 0 0 0 5px;
+    }
+    .deng:before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    .deng:after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+    }
+    @font-face {
+        font-family: "华文行楷";
+        src: url('/fonts/华文行楷.ttf');
+    }
+    .deng-t {
+        font-family: 华文行楷;
+        font-size: 26px;
+        color: #dc8f03;
+        font-weight: bold;
+        line-height: 44px;
+        text-align: center;
+    }
+    .night .deng-t,
+    .night .deng-box,
+    .night .deng-box1 {
+        background: transparent !important;
+    }
+    @-moz-keyframes swing {
+        0% {
+                -moz-transform: rotate(-10deg)
+        }
+        50% {
+             -moz-transform: rotate(10deg)
+        }
+        100% {
+                -moz-transform: rotate(-10deg)
+        }
+    }
+    @-webkit-keyframes swing {
+        0% {
+                -webkit-transform: rotate(-10deg)
+        }
+        50% {
+                -webkit-transform: rotate(10deg)
+        }
+        100% {
+                -webkit-transform: rotate(-10deg)
+        }
+    }
+</style>
+<div class="deng-box">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">喜迎</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+<div class="deng-box1">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">新春</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+<!-- 元宵节灯笼样式结束 -->
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/favicon.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">zhangchaofan&#39;s blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>联系我</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-location-arrow" style="zoom: 0.6;"></i>
+      
+      <span>导航</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/navigate">
+          
+          <i class="fas fa-location-arrow" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>导航</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/home">
+          
+          <i class="fas fa-home" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>首页</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/music">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/box">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>聚宝盒</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/favicon.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">zhangchaofan&#39;s blog</div>
+        <div class="logo-desc">
+            
+            分享生活，分享知识
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			联系我
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-location-arrow"></i>
+			
+			导航
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/navigate " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-location-arrow" style="position: absolute;left:50px" ></i>
+			      
+		          <span>导航</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/home " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-home" style="position: absolute;left:50px" ></i>
+			      
+		          <span>首页</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/music " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/box " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>聚宝盒</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/plant/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">hzau_RNA-seq</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
+                            </a>
+                        
+                            <a href="/tags/Pipeline/">
+                                <span class="chip bg-color">Pipeline</span>
+                            </a>
+                        
+                            <a href="/tags/RNA-seq/">
+                                <span class="chip bg-color">RNA-seq</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2025-06-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2025-06-07
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    22 分
+                </div>
+                
+
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <style>
+pre {
+  overflow-y: auto;
+  max-height: 900px;
+}
+</style>
+
+<p>流程总览：</p>
+<p><img src="/blog_pics/hzau_RNA-seq/pipeline_overview.png" alt="png"><br>本流程参考华中农业大学<a target="_blank" rel="noopener" href="http://www.guolianglab.org/">李国亮老师</a>的<a target="_blank" rel="noopener" href="https://github.com/chaofan520/Bioinformatics_Pipelines/hzau_RNA-seq">课程PPT</a>，旨在提供一个打包好的pipeline，一行命令进行转录组数据的分析。</p>
+<h2 id="0-环境配置"><a href="#0-环境配置" class="headerlink" title="0. 环境配置"></a>0. 环境配置</h2><p>需要预安装的一些软件，包括：</p>
+<ol>
+<li><code>conda</code><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">conda create -n hzau_RNA-seq
+conda activate hzau_RNA-seq
+conda install python&#x3D;3.10 fastqc fastp multiqc&#x3D;1.26 sra-tools&#x3D;3.1 samtools&#x3D;1.21 -c bioconda -c conda-forge
+conda install hisat2&#x3D;2.2.1 STAR&#x3D;2.7.11b stringtie&#x3D;2.2.3 subread&#x3D;2.1.1 deeptools snakemake -c bioconda -c conda-forge
+# 大爷的 之前openssl版本有问题
+conda install r-base&#x3D;4.4.2 r-biocmanager r-ggplot2&#x3D;3.5.1 curl&#x3D;8.11.1 openssl&#x3D;3.4.0 -c bioconda -c conda-forge
+# 我这里通过conda安装bioconductor-deseq2老有问题，只能通过BiocManager。可能你直接conda装就成功了
+# conda install bioconductor-deseq2 -c bioconda -c conda-forge <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-R" data-language="R"><div class="caption"><span>install_DESeq2.R</span></div><code class="language-R"># 如DEseq2直接通过conda安装成功，则不需要运行 &quot;BiocManager::install(&quot;DESeq2&quot;)&quot;
+BiocManager::install(&quot;DESeq2&quot;)
+
+# 安装其它依赖
+install.packages(&quot;purrr&quot;)
+install.packages(&quot;tibble&quot;)
+library(DESeq2)
+# Done!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="1-原始数据下载"><a href="#1-原始数据下载" class="headerlink" title="1. 原始数据下载"></a>1. 原始数据下载</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 配置工作目录
+mkdir 00.raw_sra 01.raw_fastq 02.clean_fastq 03.alignment_file 04.count_matrix 05.DEseq2
+
+# 下载原始sra文件
+cat SRR_Acc_List.txt | awk &#39;&#123;print $1&#125;&#39; |while read line; do
+    prefetch $&#123;line&#125; -O 00.raw_sra &amp;
+done
+## 下载完需检查文件大小是否与原网页一致 
+
+# sra转fastq.gz
+cat SRR_Acc_List.txt | awk &#39;&#123;print $1&#125;&#39; | while read line; do
+    fastq-dump 00.raw_sra&#x2F;$&#123;line&#125;&#x2F;$&#123;line&#125;.sra --split-3 --gzip -O 01.raw_fastq &amp;
+done<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-txt" data-language="txt"><div class="caption"><span>SRR_Acc_List.txt</span></div><code class="language-txt">SRR15859987 # mature leaves Col-0 Repeat1
+SRR15859988 # mature leaves Col-0 Repeat2
+SRR15859989 # mature leaves Col-0 Repeat3
+SRR15859993 # mature leaves met1-3 Repeat1
+SRR15859994 # mature leaves met1-3 Repeat2
+SRR15859995 # mature leaves met1-3 Repeat3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="2-Shell命令行操作"><a href="#2-Shell命令行操作" class="headerlink" title="2. Shell命令行操作"></a>2. <code>Shell</code>命令行操作</h2>李老师这里介绍了几种常用的流程：<blockquote>
+<ol>
+<li>Fastp -&gt; HISAT2/STAR -&gt; featureCounts|htseq-count（基于gene Counts）  -&gt; DESeq2  </li>
+<li>Fastp -&gt; HISAT2/STAR -&gt; StringTie（基于转录本） -&gt; EdgeR  </li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<p>我这个()注释位置与原PPT不同，放这里个人感觉更直观。</p>
+<h3 id="2-1-数据质控"><a href="#2-1-数据质控" class="headerlink" title="2.1 数据质控"></a>2.1 数据质控</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># raw_data 测序数据质量检测
+fastqc 01.raw_fastq&#x2F;*.gz -o 01.raw_fastq&#x2F; -t 12
+multiqc 01.raw_fastq&#x2F; -o 01.raw_fastq&#x2F;multiqc # 可以看下multiqc_report.html，原始数据有点接头
+
+# fastq 测序数据质控
+for i in 87 88 89 93 94 95
+do
+    fastp -i 01.raw_fastq&#x2F;SRR158599$&#123;i&#125;_1.fastq.gz -o 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;_1.fastq.gz -I 01.raw_fastq&#x2F;SRR158599$&#123;i&#125;_2.fastq.gz -O 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;_2.fastq.gz -h 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;.fastp.html -j 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;.fastp.json --thread 16
+done 
+
+# clean_data 测序数据质量检测
+fastqc 02.clean_fastq&#x2F;*.gz -o 02.clean_fastq&#x2F; -t 12
+multiqc 02.clean_fastq&#x2F; -o 02.clean_fastq&#x2F;multiqc # 对比下质控前后结果
+
+# 目前大部分情况下是不需要去除rRNA的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-2-数据比对"><a href="#2-2-数据比对" class="headerlink" title="2.2 数据比对"></a>2.2 数据比对</h3><p>首先下载基因组数据</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># dna_sm 基因组softmask版本
+wget https:&#x2F;&#x2F;ftp.ensemblgenomes.ebi.ac.uk&#x2F;pub&#x2F;plants&#x2F;release-61&#x2F;fasta&#x2F;arabidopsis_thaliana&#x2F;dna&#x2F;Arabidopsis_thaliana.TAIR10.dna_sm.toplevel.fa.gz
+
+wget https:&#x2F;&#x2F;ftp.ensemblgenomes.ebi.ac.uk&#x2F;pub&#x2F;plants&#x2F;release-61&#x2F;gtf&#x2F;arabidopsis_thaliana&#x2F;Arabidopsis_thaliana.TAIR10.61.gtf.gz
+gzip -d *.gz 
+
+mkdir Reference
+mv Arabidopsis_thaliana.TAIR10.61.gtf Reference&#x2F;
+mv Arabidopsis_thaliana.TAIR10.dna_sm.toplevel.fa Reference&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-2-1-HISAT2比对"><a href="#2-2-1-HISAT2比对" class="headerlink" title="2.2.1 HISAT2比对"></a>2.2.1 <code>HISAT2</code>比对</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir Reference&#x2F;hisat2_index
+# 构建HISAT2 基因组比对索引
+hisat2-build -p 20 Reference&#x2F;Arabidopsis_thaliana.TAIR10.dna_sm.toplevel.fa Reference&#x2F;hisat2_index&#x2F;Arabidopsis_thaliana.TAIR10
+
+mkdir -p 03.alignment_file&#x2F;hisat2_result
+for i in 87 88 89 93 94 95
+do
+    hisat2 -x Reference&#x2F;hisat2_index&#x2F;Arabidopsis_thaliana.TAIR10 -1 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;_1.fastq.gz -2 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;_2.fastq.gz -S 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.sam -p 20 --summary-file 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.summary
+done <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-2-2-STAR比对"><a href="#2-2-2-STAR比对" class="headerlink" title="2.2.2 STAR比对"></a>2.2.2 <code>STAR</code>比对</h4><p>其实使用STAR比对这一步可以不做的，我个人一般也是直接使用<code>HISAT2</code>进行mapping。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir Reference&#x2F;STAR_index
+# 构建STAR 基因组比对索引
+STAR --runThreadN 16 --runMode genomeGenerate --genomeDir Reference&#x2F;STAR_index&#x2F; --genomeFastaFiles Reference&#x2F;Arabidopsis_thaliana.TAIR10.dna_sm.toplevel.fa
+# 有个 WARNING啊，课件里只用了一条染色体应该也有WARNING的
+# !!!!! WARNING: --genomeSAindexNbases 14 is too large for the genome size&#x3D;119667750, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 12
+# 我们重新生成
+STAR --runThreadN 16 --runMode genomeGenerate --genomeDir Reference&#x2F;STAR_index&#x2F; --genomeFastaFiles Reference&#x2F;Arabidopsis_thaliana.TAIR10.dna_sm.toplevel.fa --genomeSAindexNbases 12
+
+mkdir -p 03.alignment_file&#x2F;star_result
+for i in 87 88 89 93 94 95
+do
+    STAR --runThreadN 16 --runMode alignReads --readFilesCommand zcat --outSAMunmapped None --genomeDir Reference&#x2F;STAR_index&#x2F; --readFilesIn 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;_1.fastq.gz 02.clean_fastq&#x2F;SRR158599$&#123;i&#125;_2.fastq.gz --outFileNamePrefix 03.alignment_file&#x2F;star_result&#x2F;SRR158599$&#123;i&#125;_
+done <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-2-3-sam2bam"><a href="#2-2-3-sam2bam" class="headerlink" title="2.2.3 sam2bam"></a>2.2.3 sam2bam</h4><p><code>HISAT2</code>的输出<code>sam</code>是按照<code>readsname</code>进行排序的，可以直接用于<code>htseq-count</code>进行计数。但有些软件（比如：StringTie<sup><a name="ref1">1</a></sup>）的输入要求必须是按<code>position</code>进行排序，我们需要使用<code>samtools</code>进行转换。而且<code>sam</code>文件非常大，将<code>sam</code>转换为<code>bam</code>也能很好的缓解储存压力。<code>samtools sort</code>的输出默认是按照<code>position</code>进行排序，如果这样的<code>bam</code>用于<code>htseq-count</code>计数，需指定<code>-r pos</code>(default: name)。这里只是提一嘴，我们这里不使用<code>htseq-count</code>进行计数。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">for i in 87 88 89 93 94 95
+do
+    samtools view -@ 16 -bS 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.sam &gt; 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.bam &amp;&amp; rm 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.sam
+
+    samtools sort -@ 16 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.bam -o 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.sort.bam &amp;&amp; rm 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.bam
+
+    samtools index 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.sort.bam
+done<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-3-计算基因表达量"><a href="#2-3-计算基因表达量" class="headerlink" title="2.3 计算基因表达量"></a>2.3 计算基因表达量</h3><h4 id="2-3-1-featureCounts-htseq-count"><a href="#2-3-1-featureCounts-htseq-count" class="headerlink" title="2.3.1 featureCounts|htseq-count"></a>2.3.1 featureCounts|htseq-count</h4><p>这里使用<code>featureCounts</code>或<code>htseq-count</code>都行，我们这里参照原PPT使用<code>featureCounts</code>。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir -p 04.count_matrix&#x2F;featureCounts
+for i in 87 88 89 93 94 95
+do
+    featureCounts -a Reference&#x2F;Arabidopsis_thaliana.TAIR10.61.gtf -o 04.count_matrix&#x2F;featureCounts&#x2F;SRR158599$&#123;i&#125;.featurecount.txt -p 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.sort.bam   # 双端数据千万别忘了加 -p
+done <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>featureCounts</code>的输出很简单，单个样本的情况下输出七列，第一列为基因ID，第六列为这个基因所有<code>exon</code>的长度（去掉了不同转录本间的冗余长度，可直接用来算<code>FPKM</code>），第7列为<code>mapping</code>到的<code>Fragments</code>数量（单端测序数据也称为<code>reads</code>数量）。</p>
+<p><img src="/blog_pics/hzau_RNA-seq/featureCounts_ouf.png" alt="png"> </p>
+<h4 id="2-3-2-Stringtie"><a href="#2-3-2-Stringtie" class="headerlink" title="2.3.2 Stringtie"></a>2.3.2 Stringtie</h4><p><code>Stringtie</code>可以用来鉴定新的转录本，挖掘可变剪切事件，也可以直接定量，参考简书教程<sup><a name="ref1">2</a></sup>。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir -p 04.count_matrix&#x2F;stringtie
+for i in 87 88 89 93 94 95
+do
+    stringtie -p 16 03.alignment_file&#x2F;hisat2_result&#x2F;SRR158599$&#123;i&#125;.hisat2.sort.bam -G Reference&#x2F;Arabidopsis_thaliana.TAIR10.61.gtf -o 04.count_matrix&#x2F;stringtie&#x2F;SRR158599$&#123;i&#125;.gtf -e -A 04.count_matrix&#x2F;stringtie&#x2F;SRR158599$&#123;i&#125;.gene.tab
+done<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意，<code>Stringtie</code>的输出直接为<code>FPKM</code>和<code>TPM</code>,没有<code>count</code>。后续的<code>DESeq2</code>差异表达分析的输入必须使用原始的<code>count</code>。其实我们用了<code>featureCounts|htseq-count</code>进行计数后没必要再用<code>Stringtie</code>，如果需要<code>FPKM</code>和<code>TPM</code>值，可以通过<code>count</code>进行转换。</p>
+<p><img src="/blog_pics/hzau_RNA-seq/Stringtie_ouf.png" alt="png"> </p>
+<h3 id="2-4-检查样本的重复性"><a href="#2-4-检查样本的重复性" class="headerlink" title="2.4 检查样本的重复性"></a>2.4 检查样本的重复性</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 计算每个bam文件的覆盖度情况
+multiBamSummary bins --bamfiles 03.alignment_file&#x2F;hisat2_result&#x2F;SRR15859987.hisat2.sort.bam 03.alignment_file&#x2F;hisat2_result&#x2F;SRR15859988.hisat2.sort.bam 03.alignment_file&#x2F;hisat2_result&#x2F;SRR15859989.hisat2.sort.bam 03.alignment_file&#x2F;hisat2_result&#x2F;SRR15859993.hisat2.sort.bam 03.alignment_file&#x2F;hisat2_result&#x2F;SRR15859994.hisat2.sort.bam 03.alignment_file&#x2F;hisat2_result&#x2F;SRR15859995.hisat2.sort.bam --minMappingQuality 30 --labels Col_rep1 Col_rep2 Col_rep3 met_rep1 met_rep2 met_rep3 -out 03.alignment_file&#x2F;readCounts.npz --outRawCounts 03.alignment_file&#x2F;readCounts.tab -p 20
+
+# 基于覆盖度信息进行层次聚类
+plotCorrelation -in 03.alignment_file&#x2F;readCounts.npz --corMethod spearman --skipZeros --plotTitle &quot;Spearman Correlation of Read Counts&quot; --whatToPlot heatmap --colorMap RdYlBu --plotNumbers -o 03.alignment_file&#x2F;heatmap_SpearmanCorr_readCounts.png --outFileCorMatrix 03.alignment_file&#x2F;readCounts.tab<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>样本重复性不错：<br><img src="/blog_pics/hzau_RNA-seq/sample_cor.png" alt="png"></p>
+<h3 id="2-5-DESeq2差异表达分析"><a href="#2-5-DESeq2差异表达分析" class="headerlink" title="2.5 DESeq2差异表达分析"></a>2.5 <code>DESeq2</code>差异表达分析</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Rscript DEseq2.R<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-R" data-language="R"><div class="caption"><span>DEseq2.R</span></div><code class="language-R">library(purrr)
+suppressMessages(library(DESeq2))
+library(ggplot2)
+library(tibble)
+
+################# Merge count table ##################
+samplelist &lt;- c(&quot;SRR15859987&quot;, &quot;SRR15859988&quot;, &quot;SRR15859989&quot;, &quot;SRR15859993&quot;, &quot;SRR15859994&quot;, &quot;SRR15859995&quot;)
+
+# 读取不同样本的基因表达量列表
+exprlist &lt;- lapply(samplelist, function(x)&#123;
+     expr &lt;- read.table(paste0(&quot;04.count_matrix&#x2F;featureCounts&#x2F;&quot;, x, &quot;.featurecount.txt&quot;), header&#x3D;T) ## 读取文件
+     expr&lt;- expr[,c(1,7)] ### 提取基因id和表达量值
+     colnames(expr) &lt;- c(&quot;GeneID&quot;, x) ## 重命名
+     expr
+&#125;)
+
+# 多个基因样本的基因表达量列表合并
+expr.mat &lt;- purrr::reduce(exprlist, function(x,y)&#123;merge(x,y, by&#x3D;&quot;GeneID&quot;, all.x&#x3D;T)&#125;)
+write.table(expr.mat, 
+  file &#x3D; &quot;.&#x2F;05.DEseq2&#x2F;merged_count_matrix.txt&quot;, 
+  sep &#x3D; &quot;\t&quot;, 
+  quote &#x3D; FALSE, 
+  row.names &#x3D; FALSE  
+)
+
+######################### DEG #########################
+group_info &lt;- data.frame(Sample&#x3D;samplelist, Group&#x3D;c(rep(&quot;Col&quot;,3), rep(&quot;met1&quot;,3))) 
+print(group_info)
+expr &lt;- column_to_rownames(expr.mat, &quot;GeneID&quot;)  # 表达矩阵
+head(expr)
+colData &lt;- group_info # 分组信息
+colData$Group &lt;- factor(colData$Group, levels &#x3D; c(&quot;Col&quot;, &quot;met1&quot;))
+dds &lt;- DESeqDataSetFromMatrix(countData &#x3D; as.matrix(expr), colData &#x3D; colData, design &#x3D; ~Group)
+dds &lt;- dds[rowSums(counts(dds)) &gt; 10, ] # 过滤低表达基因
+dds &lt;- DESeq(dds) # 差异分析
+print(&quot;######## Compare groups&quot;)
+print(resultsNames(dds)) # 查看比较组别
+print(dds)
+# log2(met1 &#x2F; Col)
+res &lt;- results(dds) # 获取差异表达结果
+head(res) # 查看差异表达结果
+## 保存分析结果
+write.csv(res, &quot;.&#x2F;05.DEseq2&#x2F;deseq2.diff.csv&quot;)
+
+####################### Volcano #######################
+res.plot &lt;- data.frame(res, stringsAsFactors &#x3D; FALSE, check.names &#x3D; FALSE)
+res.plot &lt;- na.omit(res.plot)
+res.plot$gene &lt;- rownames(res.plot)
+res.plot$sig &lt;- &quot;Not Signaficant&quot;
+res.plot[res.plot$log2FoldChange &gt; 2 &amp; res.plot$padj &lt; 0.01, ]$sig &lt;- &quot;Highly expression in met1&quot;
+res.plot[res.plot$log2FoldChange &lt; -2 &amp; res.plot$padj &lt; 0.01, ]$sig &lt;- &quot;Highly expression in Col&quot;
+res.plot$label &lt;- ifelse(res.plot$padj &lt; 10e-100 &amp; abs(res.plot$log2FoldChange) &gt;&#x3D; 5,
+                        rownames(res.plot), &quot;&quot;)
+p &lt;- ggplot(data&#x3D;res.plot, aes(x&#x3D;log2FoldChange,y&#x3D; -log10(padj))) +
+  geom_point(aes(color&#x3D;sig)) + 
+  geom_text(aes(label&#x3D;label),  nudge_x&#x3D;.5,nudge_y&#x3D;.5, size&#x3D;2.5) +
+  scale_color_manual(values&#x3D;c(&quot;#546de5&quot;, &quot;#ff4757&quot;, &quot;#d2dae2&quot;)) + 
+  labs(x&#x3D;expression(log[2](FC)), y&#x3D;expression(-log[10](padj))) +
+  geom_hline(yintercept&#x3D;2, linetype&#x3D;4) +
+  geom_vline(xintercept&#x3D;c(-2, 2),linetype&#x3D;4) +
+  theme_bw() + theme(panel.grid &#x3D; element_blank(), 
+  legend.position &#x3D; &quot;top&quot;, legend.title &#x3D; element_blank(), aspect.ratio&#x3D;1,
+        legend.background &#x3D; element_blank())
+## 保存
+ggsave(&quot;.&#x2F;05.DEseq2&#x2F;Volcano.plot.pdf&quot;, p, width&#x3D;5.5, height&#x3D;5.5)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>与原PPT有点差异，不知道原PPT是比对到全基因组，还是只是<code>Chr1</code>。</p>
+<p><img src="/blog_pics/hzau_RNA-seq/Volcano_plot.png" alt="png"></p>
+<h2 id="3-snakemake-pipeline"><a href="#3-snakemake-pipeline" class="headerlink" title="3. snakemake pipeline"></a>3. <code>snakemake</code> pipeline</h2><pre class="line-numbers language-python" data-language="python"><div class="caption"><span>Snakefile</span></div><code class="language-python"><span class="token comment"># Snakefile for RNA-seq analysis pipeline (with pre-provided reference)</span>
+configfile<span class="token punctuation">:</span> <span class="token string">"config.yaml"</span>
+
+<span class="token comment"># --- 从配置文件读取参数 --- </span>
+WORK_DIR <span class="token operator">=</span> config<span class="token punctuation">[</span><span class="token string">"work_dir"</span><span class="token punctuation">]</span>
+THREADS <span class="token operator">=</span> config<span class="token punctuation">[</span><span class="token string">"threads"</span><span class="token punctuation">]</span>
+REF_FASTA <span class="token operator">=</span> config<span class="token punctuation">[</span><span class="token string">"ref_fasta"</span><span class="token punctuation">]</span>  <span class="token comment"># 基因组fasta路径</span>
+REF_GTF <span class="token operator">=</span> config<span class="token punctuation">[</span><span class="token string">"ref_gtf"</span><span class="token punctuation">]</span>      <span class="token comment"># 注释文件路径</span>
+REF_PREFIX <span class="token operator">=</span> config<span class="token punctuation">[</span><span class="token string">"ref_prefix"</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 获取所有样本列表</span>
+ALL_SAMPLES <span class="token operator">=</span> <span class="token punctuation">[</span>sample <span class="token keyword">for</span> group <span class="token keyword">in</span> config<span class="token punctuation">[</span><span class="token string">"samples"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">for</span> sample <span class="token keyword">in</span> group<span class="token punctuation">]</span>
+SAMPLES_GROUP <span class="token operator">=</span> <span class="token punctuation">&#123;</span>sample<span class="token punctuation">:</span>group <span class="token keyword">for</span> group <span class="token keyword">in</span> config<span class="token punctuation">[</span><span class="token string">"samples"</span><span class="token punctuation">]</span> <span class="token keyword">for</span> sample <span class="token keyword">in</span> config<span class="token punctuation">[</span><span class="token string">"samples"</span><span class="token punctuation">]</span><span class="token punctuation">[</span>group<span class="token punctuation">]</span><span class="token punctuation">&#125;</span>
+GROUP_OF_SAMPLES <span class="token operator">=</span> <span class="token punctuation">[</span>SAMPLES_GROUP<span class="token punctuation">[</span>sample<span class="token punctuation">]</span> <span class="token keyword">for</span> sample <span class="token keyword">in</span> ALL_SAMPLES<span class="token punctuation">]</span>
+GROUP_NAMES <span class="token operator">=</span> unique_groups <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">.</span>fromkeys<span class="token punctuation">(</span>GROUP_OF_SAMPLES<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>GROUP_NAMES<span class="token punctuation">)</span>
+
+<span class="token comment"># --- 定义目录结构 --- </span>
+dirs <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string">"00.raw_sra"</span><span class="token punctuation">,</span>
+    <span class="token string">"01.raw_fastq"</span><span class="token punctuation">,</span>
+    <span class="token string">"02.clean_fastq"</span><span class="token punctuation">,</span>
+    <span class="token string">"03.alignment_file/hisat2_result"</span><span class="token punctuation">,</span>
+    <span class="token string">"04.count_matrix/featureCounts"</span><span class="token punctuation">,</span> 
+    <span class="token string">"05.DEseq2"</span><span class="token punctuation">,</span>
+    <span class="token string">"Reference/hisat2_index"</span>
+<span class="token punctuation">]</span>
+
+rule <span class="token builtin">all</span><span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        expand<span class="token punctuation">(</span><span class="token string">"05.DEseq2/&#123;plot&#125;"</span><span class="token punctuation">,</span> plot<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"merged_count_matrix.txt"</span><span class="token punctuation">,</span> <span class="token string">"deseq2.diff.csv"</span><span class="token punctuation">,</span> <span class="token string">"Volcano.plot.pdf"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token string">"03.alignment_file/heatmap_SpearmanCorr_readCounts.png"</span>
+
+<span class="token comment"># --- 创建目录结构 --- </span>
+rule create_dirs<span class="token punctuation">:</span>
+    run<span class="token punctuation">:</span>
+        <span class="token keyword">import</span> os
+        <span class="token keyword">for</span> d <span class="token keyword">in</span> dirs<span class="token punctuation">:</span>
+            os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>WORK_DIR<span class="token punctuation">,</span> d<span class="token punctuation">)</span><span class="token punctuation">,</span> exist_ok<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+<span class="token comment"># --- 数据下载和质控部分保持不变 ---</span>
+rule download_sra<span class="token punctuation">:</span>
+    output<span class="token punctuation">:</span>
+        <span class="token string">"00.raw_sra/&#123;sample&#125;/&#123;sample&#125;.sra"</span>
+    params<span class="token punctuation">:</span>
+        outdir <span class="token operator">=</span> <span class="token string">"00.raw_sra"</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][prefetch]&#125; &#123;wildcards.sample&#125; -O &#123;params.outdir&#125;"</span>
+
+rule sra_to_fastq<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        <span class="token string">"00.raw_sra/&#123;sample&#125;/&#123;sample&#125;.sra"</span>
+    output<span class="token punctuation">:</span>
+        <span class="token string">"01.raw_fastq/&#123;sample&#125;_1.fastq.gz"</span><span class="token punctuation">,</span>
+        <span class="token string">"01.raw_fastq/&#123;sample&#125;_2.fastq.gz"</span> 
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][fastq-dump]&#125; &#123;input&#125; --split-3 --gzip -O 01.raw_fastq"</span>
+
+<span class="token comment"># --- FastQC原始数据质控 --- </span>
+rule raw_fastqc<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        raw_fq1 <span class="token operator">=</span> <span class="token string">"01.raw_fastq/&#123;sample&#125;_1.fastq.gz"</span><span class="token punctuation">,</span>
+        raw_fq2 <span class="token operator">=</span> <span class="token string">"01.raw_fastq/&#123;sample&#125;_2.fastq.gz"</span>
+    output<span class="token punctuation">:</span>
+        <span class="token string">"01.raw_fastq/&#123;sample&#125;_1_fastqc.html"</span><span class="token punctuation">,</span>
+        <span class="token string">"01.raw_fastq/&#123;sample&#125;_2_fastqc.html"</span><span class="token punctuation">,</span>
+        <span class="token string">"01.raw_fastq/&#123;sample&#125;_1_fastqc.zip"</span><span class="token punctuation">,</span>
+        <span class="token string">"01.raw_fastq/&#123;sample&#125;_2_fastqc.zip"</span>
+
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][fastqc]&#125; &#123;input.raw_fq1&#125; -o 01.raw_fastq -t 1;"</span>
+        <span class="token string">"&#123;config[tools][fastqc]&#125; &#123;input.raw_fq2&#125; -o 01.raw_fastq -t 1"</span>
+
+<span class="token comment"># --- MultiQC汇总报告 --- </span>
+rule raw_multiqc<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        expand<span class="token punctuation">(</span><span class="token string">"01.raw_fastq/&#123;sample&#125;_&#123;pair&#125;_fastqc.html"</span><span class="token punctuation">,</span> 
+               sample<span class="token operator">=</span>ALL_SAMPLES<span class="token punctuation">,</span> pair<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"1"</span><span class="token punctuation">,</span> <span class="token string">"2"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    output<span class="token punctuation">:</span>
+        <span class="token string">"01.raw_fastq/multiqc_report.html"</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][multiqc]&#125; 01.raw_fastq/ -o 01.raw_fastq"</span>
+
+<span class="token comment"># --- Fastp数据清洗 --- </span>
+rule fastp_clean<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        r1 <span class="token operator">=</span> <span class="token string">"01.raw_fastq/&#123;sample&#125;_1.fastq.gz"</span><span class="token punctuation">,</span>
+        r2 <span class="token operator">=</span> <span class="token string">"01.raw_fastq/&#123;sample&#125;_2.fastq.gz"</span><span class="token punctuation">,</span>
+        raw_multiqc <span class="token operator">=</span> <span class="token string">"01.raw_fastq/multiqc_report.html"</span>
+    output<span class="token punctuation">:</span>
+        cr1 <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;_1.fastq.gz"</span><span class="token punctuation">,</span>
+        cr2 <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;_2.fastq.gz"</span><span class="token punctuation">,</span>
+        html <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;.fastp.html"</span><span class="token punctuation">,</span>
+        json <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;.fastp.json"</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][fastp]&#125; -i &#123;input.r1&#125; -I &#123;input.r2&#125; "</span>
+        <span class="token string">"-o &#123;output.cr1&#125; -O &#123;output.cr2&#125; "</span>
+        <span class="token string">"-h &#123;output.html&#125; -j &#123;output.json&#125; "</span>
+        <span class="token string">"--thread 4"</span>
+
+<span class="token comment"># --- 清洗后质控 --- </span>
+rule clean_fastqc<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        clean_fq1 <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;_1.fastq.gz"</span><span class="token punctuation">,</span>
+        clean_fq2 <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;_2.fastq.gz"</span>
+    output<span class="token punctuation">:</span>
+        <span class="token string">"02.clean_fastq/&#123;sample&#125;_1_fastqc.html"</span><span class="token punctuation">,</span>
+        <span class="token string">"02.clean_fastq/&#123;sample&#125;_2_fastqc.html"</span><span class="token punctuation">,</span>
+        <span class="token string">"02.clean_fastq/&#123;sample&#125;_1_fastqc.zip"</span><span class="token punctuation">,</span>
+        <span class="token string">"02.clean_fastq/&#123;sample&#125;_2_fastqc.zip"</span>
+
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][fastqc]&#125; &#123;input.clean_fq1&#125; -o 02.clean_fastq -t 1;"</span>
+        <span class="token string">"&#123;config[tools][fastqc]&#125; &#123;input.clean_fq2&#125; -o 02.clean_fastq -t 1"</span>
+
+rule clean_multiqc<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        expand<span class="token punctuation">(</span><span class="token string">"02.clean_fastq/&#123;sample&#125;_&#123;pair&#125;_fastqc.html"</span><span class="token punctuation">,</span> 
+               sample<span class="token operator">=</span>ALL_SAMPLES<span class="token punctuation">,</span> pair<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"1"</span><span class="token punctuation">,</span> <span class="token string">"2"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    output<span class="token punctuation">:</span>
+        <span class="token string">"02.clean_fastq/multiqc_report.html"</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][multiqc]&#125; 02.clean_fastq/ -o 02.clean_fastq"</span>
+
+<span class="token comment"># --- 参考基因组处理 ---</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>REF_FASTA<span class="token punctuation">)</span>
+rule hisat2_index<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        REF_FASTA
+    output<span class="token punctuation">:</span>
+        expand<span class="token punctuation">(</span><span class="token string">"Reference/hisat2_index/&#123;prefix&#125;.&#123;n&#125;.ht2"</span><span class="token punctuation">,</span>
+               prefix<span class="token operator">=</span>config<span class="token punctuation">[</span><span class="token string">"ref_prefix"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> n<span class="token operator">=</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][hisat2]&#125;-build -p &#123;THREADS&#125; &#123;config[ref_fasta]&#125; Reference/hisat2_index/&#123;config[ref_prefix]&#125;"</span>
+
+<span class="token comment"># --- 比对和定量 ---</span>
+rule hisat2_align<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        clean_multiqc <span class="token operator">=</span> <span class="token string">"02.clean_fastq/multiqc_report.html"</span><span class="token punctuation">,</span>
+        r1 <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;_1.fastq.gz"</span><span class="token punctuation">,</span>
+        r2 <span class="token operator">=</span> <span class="token string">"02.clean_fastq/&#123;sample&#125;_2.fastq.gz"</span><span class="token punctuation">,</span>
+        idx <span class="token operator">=</span> expand<span class="token punctuation">(</span><span class="token string">"Reference/hisat2_index/&#123;prefix&#125;.&#123;n&#125;.ht2"</span><span class="token punctuation">,</span>
+                   prefix<span class="token operator">=</span>config<span class="token punctuation">[</span><span class="token string">"ref_prefix"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> n<span class="token operator">=</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    output<span class="token punctuation">:</span>
+        sam <span class="token operator">=</span> <span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.sam"</span><span class="token punctuation">,</span>
+        summary <span class="token operator">=</span> <span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.summary"</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][hisat2]&#125; -x Reference/hisat2_index/&#123;config[ref_prefix]&#125; "</span>
+        <span class="token string">"-1 &#123;input.r1&#125; -2 &#123;input.r2&#125; "</span>
+        <span class="token string">"-S &#123;output.sam&#125; -p 4 "</span>
+        <span class="token string">"--summary-file &#123;output.summary&#125;"</span>
+
+rule sam_to_bam<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        sam <span class="token operator">=</span> <span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.sam"</span>
+    output<span class="token punctuation">:</span>
+        bam <span class="token operator">=</span> <span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.sort.bam"</span><span class="token punctuation">,</span>
+        bai <span class="token operator">=</span> <span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.sort.bam.bai"</span>  <span class="token comment"># 索引文件</span>
+    params<span class="token punctuation">:</span>
+        unsorted_bam <span class="token operator">=</span> <span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.bam"</span>  <span class="token comment"># 中间文件</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        # 1. SAM转BAM
+        &#123;config[tools][samtools]&#125; view -@ 4 -bS &#123;input.sam&#125; > &#123;params.unsorted_bam&#125;
+        
+        # 2. 排序BAM
+        &#123;config[tools][samtools]&#125; sort -@ 4 &#123;params.unsorted_bam&#125; -o &#123;output.bam&#125;
+        
+        # 3. 删除中间文件
+        rm -v &#123;params.unsorted_bam&#125; &#123;input.sam&#125;
+        
+        # 4. 创建索引
+        &#123;config[tools][samtools]&#125; index &#123;output.bam&#125;
+        """</span>
+
+rule feature_counts<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        bam <span class="token operator">=</span> <span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.sort.bam"</span><span class="token punctuation">,</span>
+        gtf <span class="token operator">=</span> REF_GTF
+    output<span class="token punctuation">:</span>
+        counts <span class="token operator">=</span> <span class="token string">"04.count_matrix/featureCounts/&#123;sample&#125;.featurecount.txt"</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][featurecounts]&#125; -a &#123;input.gtf&#125; -o &#123;output.counts&#125; "</span>
+        <span class="token string">"-p &#123;input.bam&#125;"</span>
+
+<span class="token comment"># --- 样本相关性分析 ---</span>
+rule sample_correlation<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        bams <span class="token operator">=</span> expand<span class="token punctuation">(</span><span class="token string">"03.alignment_file/hisat2_result/&#123;sample&#125;.hisat2.sort.bam"</span><span class="token punctuation">,</span> sample<span class="token operator">=</span>ALL_SAMPLES<span class="token punctuation">)</span>
+    output<span class="token punctuation">:</span>
+        <span class="token string">"03.alignment_file/heatmap_SpearmanCorr_readCounts.png"</span><span class="token punctuation">,</span>
+        <span class="token string">"03.alignment_file/readCounts.npz"</span><span class="token punctuation">,</span>
+        <span class="token string">"03.alignment_file/readCounts.tab"</span>
+    params<span class="token punctuation">:</span>
+        labels <span class="token operator">=</span> <span class="token keyword">lambda</span> wildcards<span class="token punctuation">:</span> <span class="token string">" "</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>
+            <span class="token punctuation">[</span><span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">&#123;</span>group<span class="token punctuation">&#125;</span></span><span class="token string">_rep</span><span class="token interpolation"><span class="token punctuation">&#123;</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">&#125;</span></span><span class="token string">"</span></span> 
+             <span class="token keyword">for</span> group <span class="token keyword">in</span> config<span class="token punctuation">[</span><span class="token string">"samples"</span><span class="token punctuation">]</span> 
+             <span class="token keyword">for</span> i<span class="token punctuation">,</span> sample <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>config<span class="token punctuation">[</span><span class="token string">"samples"</span><span class="token punctuation">]</span><span class="token punctuation">[</span>group<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token punctuation">)</span>
+    shell<span class="token punctuation">:</span>
+        <span class="token string">"&#123;config[tools][multiBamSummary]&#125; bins --bamfiles &#123;input.bams&#125; "</span>
+        <span class="token string">"--minMappingQuality 30 --labels &#123;params.labels&#125; "</span>
+        <span class="token string">"-out &#123;output[1]&#125; --outRawCounts &#123;output[2]&#125; "</span>
+        <span class="token string">"-p &#123;THREADS&#125; \n"</span>
+        <span class="token string">"&#123;config[tools][plotCorrelation]&#125; -in &#123;output[1]&#125; --corMethod spearman "</span>
+        <span class="token string">"--skipZeros --plotTitle 'Spearman Correlation of Read Counts' "</span>
+        <span class="token string">"--whatToPlot heatmap --colorMap RdYlBu --plotNumbers "</span>
+        <span class="token string">"-o &#123;output[0]&#125;"</span>
+
+<span class="token comment"># --- DESeq2差异分析 --- </span>
+rule merged_deseq2_analysis<span class="token punctuation">:</span>
+    <span class="token builtin">input</span><span class="token punctuation">:</span>
+        counts <span class="token operator">=</span> expand<span class="token punctuation">(</span><span class="token string">"04.count_matrix/featureCounts/&#123;sample&#125;.featurecount.txt"</span><span class="token punctuation">,</span> sample<span class="token operator">=</span>ALL_SAMPLES<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        gtf <span class="token operator">=</span> REF_GTF
+    output<span class="token punctuation">:</span>
+        merged_count_txt <span class="token operator">=</span> <span class="token string">"05.DEseq2/merged_count_matrix.txt"</span><span class="token punctuation">,</span>
+        diff_csv <span class="token operator">=</span> <span class="token string">"05.DEseq2/deseq2.diff.csv"</span><span class="token punctuation">,</span>
+        volcano <span class="token operator">=</span> <span class="token string">"05.DEseq2/Volcano.plot.pdf"</span>
+    run<span class="token punctuation">:</span>
+        <span class="token comment"># 准备分组信息</span>
+        group_data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> group_name<span class="token punctuation">,</span> samples <span class="token keyword">in</span> config<span class="token punctuation">[</span><span class="token string">"samples"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            group_data<span class="token punctuation">.</span>extend<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string-interpolation"><span class="token string">f"'</span><span class="token interpolation"><span class="token punctuation">&#123;</span>s<span class="token punctuation">&#125;</span></span><span class="token string">':'</span><span class="token interpolation"><span class="token punctuation">&#123;</span>group_name<span class="token punctuation">&#125;</span></span><span class="token string">'"</span></span> <span class="token keyword">for</span> s <span class="token keyword">in</span> samples<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        
+        <span class="token comment"># 将列表转换为字符串</span>
+        sample_str <span class="token operator">=</span> <span class="token string">','</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string-interpolation"><span class="token string">f"'</span><span class="token interpolation"><span class="token punctuation">&#123;</span>s<span class="token punctuation">&#125;</span></span><span class="token string">'"</span></span> <span class="token keyword">for</span> s <span class="token keyword">in</span> ALL_SAMPLES<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        group_str <span class="token operator">=</span> <span class="token string">','</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string-interpolation"><span class="token string">f"'</span><span class="token interpolation"><span class="token punctuation">&#123;</span>g<span class="token punctuation">&#125;</span></span><span class="token string">'"</span></span> <span class="token keyword">for</span> g <span class="token keyword">in</span> GROUP_OF_SAMPLES<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        group_class_str <span class="token operator">=</span>  <span class="token string">','</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string-interpolation"><span class="token string">f"'</span><span class="token interpolation"><span class="token punctuation">&#123;</span>c<span class="token punctuation">&#125;</span></span><span class="token string">'"</span></span> <span class="token keyword">for</span> c <span class="token keyword">in</span> GROUP_NAMES<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        
+        <span class="token comment"># 生成R脚本</span>
+        script <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"""
+library(purrr)
+suppressMessages(library(DESeq2))
+library(ggplot2)
+library(tibble)
+
+samplelist &lt;- c(</span><span class="token interpolation"><span class="token punctuation">&#123;</span>sample_str<span class="token punctuation">&#125;</span></span><span class="token string">)
+grouplist &lt;- c(</span><span class="token interpolation"><span class="token punctuation">&#123;</span>group_str<span class="token punctuation">&#125;</span></span><span class="token string">)
+
+exprlist &lt;- lapply(samplelist, function(x)&#123;&#123;
+     expr &lt;- read.table(paste0('04.count_matrix/featureCounts/', x, '.featurecount.txt'), header=T)
+     expr&lt;- expr[,c(1,7)] 
+     colnames(expr) &lt;- c('GeneID', x) 
+     expr
+&#125;&#125;)
+
+expr.mat &lt;- purrr::reduce(exprlist, function(x,y)&#123;&#123;merge(x,y, by="GeneID", all.x=T)&#125;&#125;)
+write.table(expr.mat, 
+    file = "</span><span class="token interpolation"><span class="token punctuation">&#123;</span>output<span class="token punctuation">.</span>merged_count_txt<span class="token punctuation">&#125;</span></span><span class="token string">", 
+    sep = "\t", 
+    quote = FALSE, 
+    row.names = FALSE)
+
+group_info &lt;- data.frame(Sample=samplelist, Group=grouplist) 
+print(group_info)
+expr &lt;- column_to_rownames(expr.mat, "GeneID")
+head(expr)
+colData &lt;- group_info 
+colData$Group &lt;- factor(colData$Group, levels = c(</span><span class="token interpolation"><span class="token punctuation">&#123;</span>group_class_str<span class="token punctuation">&#125;</span></span><span class="token string">))
+dds &lt;- DESeqDataSetFromMatrix(countData = as.matrix(expr), colData = colData, design = ~Group)
+dds &lt;- dds[rowSums(counts(dds)) > 10, ] 
+dds &lt;- DESeq(dds) 
+print(resultsNames(dds)) 
+print(dds)
+res &lt;- results(dds) 
+head(res) 
+write.csv(res, "</span><span class="token interpolation"><span class="token punctuation">&#123;</span>output<span class="token punctuation">.</span>diff_csv<span class="token punctuation">&#125;</span></span><span class="token string">")
+
+res.plot &lt;- data.frame(res, stringsAsFactors = FALSE, check.names = FALSE)
+res.plot &lt;- na.omit(res.plot)
+res.plot$gene &lt;- rownames(res.plot)
+res.plot$sig &lt;- "Not Signaficant"
+res.plot[res.plot$log2FoldChange > 2 &amp; res.plot$padj &lt; 0.01, ]$sig &lt;- "Highly expression in met1"
+res.plot[res.plot$log2FoldChange &lt; -2 &amp; res.plot$padj &lt; 0.01, ]$sig &lt;- "Highly expression in CK"
+res.plot$label &lt;- ifelse(res.plot$padj &lt; 10e-100 &amp; abs(res.plot$log2FoldChange) >= 5,
+                        rownames(res.plot), "")
+p &lt;- ggplot(data=res.plot, aes(x=log2FoldChange,y= -log10(padj))) +
+  geom_point(aes(color=sig)) + 
+  geom_text(aes(label=label),  nudge_x=.5,nudge_y=.5, size=2.5) +
+  scale_color_manual(values=c("#546de5", "#ff4757", "#d2dae2")) + 
+  labs(x=expression(log[2](FC)), y=expression(-log[10](padj))) +
+  geom_hline(yintercept=2, linetype=4) +
+  geom_vline(xintercept=c(-2, 2),linetype=4) +
+  theme_bw() + theme(panel.grid = element_blank(), 
+  legend.position = "top", legend.title = element_blank(), aspect.ratio=1,
+        legend.background = element_blank())
+
+ggsave("</span><span class="token interpolation"><span class="token punctuation">&#123;</span>output<span class="token punctuation">.</span>volcano<span class="token punctuation">&#125;</span></span><span class="token string">", p, width=8, height=6)
+"""</span></span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"merged_analysis.R"</span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>script<span class="token punctuation">)</span>
+        shell<span class="token punctuation">(</span><span class="token string">"Rscript merged_analysis.R"</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><div class="caption"><span>config.yaml</span></div><code class="language-yaml"><span class="token comment"># config.yaml</span>
+<span class="token key atrule">samples</span><span class="token punctuation">:</span>
+  <span class="token key atrule">CK</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> SRR15859987
+    <span class="token punctuation">-</span> SRR15859988 
+    <span class="token punctuation">-</span> SRR15859989
+  <span class="token key atrule">met1</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> SRR15859993
+    <span class="token punctuation">-</span> SRR15859994
+    <span class="token punctuation">-</span> SRR15859995
+
+<span class="token comment"># 参考文件配置</span>
+<span class="token key atrule">ref_fasta</span><span class="token punctuation">:</span> <span class="token string">"../Reference/Arabidopsis_thaliana.TAIR10.dna_sm.toplevel.fa"</span>
+<span class="token key atrule">ref_gtf</span><span class="token punctuation">:</span> <span class="token string">"../Reference/Arabidopsis_thaliana.TAIR10.61.gtf"</span>
+<span class="token key atrule">ref_prefix</span><span class="token punctuation">:</span> <span class="token string">"Arabidopsis_thaliana.TAIR10"</span>
+
+<span class="token key atrule">work_dir</span><span class="token punctuation">:</span> <span class="token string">"."</span>
+<span class="token key atrule">threads</span><span class="token punctuation">:</span> <span class="token number">16</span>
+
+<span class="token comment"># 工具路径配置</span>
+<span class="token key atrule">tools</span><span class="token punctuation">:</span>
+  <span class="token key atrule">fastqc</span><span class="token punctuation">:</span> <span class="token string">"fastqc"</span>
+  <span class="token key atrule">multiqc</span><span class="token punctuation">:</span> <span class="token string">"multiqc"</span>
+  <span class="token key atrule">fastp</span><span class="token punctuation">:</span> <span class="token string">"fastp"</span>
+  <span class="token key atrule">hisat2</span><span class="token punctuation">:</span> <span class="token string">"hisat2"</span>
+  <span class="token key atrule">samtools</span><span class="token punctuation">:</span> <span class="token string">"samtools"</span>
+  <span class="token key atrule">featurecounts</span><span class="token punctuation">:</span> <span class="token string">"featureCounts"</span>
+  <span class="token key atrule">prefetch</span><span class="token punctuation">:</span> <span class="token string">"prefetch"</span>
+  <span class="token key atrule">fastq-dump</span><span class="token punctuation">:</span> <span class="token string">"fastq-dump"</span>
+  <span class="token key atrule">multiBamSummary</span><span class="token punctuation">:</span> <span class="token string">"multiBamSummary"</span>
+  <span class="token key atrule">plotCorrelation</span><span class="token punctuation">:</span> <span class="token string">"plotCorrelation"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">snakemake -j 20<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="/blog_pics/hzau_RNA-seq/Snakemake_volcano.png" alt="png"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://ccb.jhu.edu/software/stringtie/index.shtml?t=manual">StringTie Manual</a>  </li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c9434353b648">StringTie 简书教程</a>  </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/chaofan520/Bioinformatics_Pipelines/tree/main/hzau_RNA-seq">PPT 地址</a></li>
+</ol>
+<center><span style="color:#ff0000;">本人能力有限，难免出现错误，恳请批评指正</span></center>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">zhangchaofan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://zhangchaofan01.gitee.io/2025/06/02/hzau-rna-seq/">https://zhangchaofan01.gitee.io/2025/06/02/hzau-rna-seq/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">zhangchaofan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
+                                </a>
+                            
+                                <a href="/tags/Pipeline/">
+                                    <span class="chip bg-color">Pipeline</span>
+                                </a>
+                            
+                                <a href="/tags/RNA-seq/">
+                                    <span class="chip bg-color">RNA-seq</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg1.webp") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'QHvKVyB4LA2Ds9UxY8p2cCBv-gzGzoHsz',
+        appKey: '4eMYY2viJug47FfkfPgz0HBG',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'identicon',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '欢迎指点江山😀，留下你的评论，我一直都在哦！'
+    });
+</script>
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2025/06/02/hzau-rna-seq/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/plant/11.jpg" class="responsive-img" alt="hzau_RNA-seq">
+                        
+                        <span class="card-title">hzau_RNA-seq</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhangchaofan
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/Pipeline/">
+                        <span class="chip bg-color">Pipeline</span>
+                    </a>
+                    
+                    <a href="/tags/RNA-seq/">
+                        <span class="chip bg-color">RNA-seq</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/04/15/evolvepro-directed-evolution/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/plant/0.jpg" class="responsive-img" alt="EvolvePro-directed evolution">
+                        
+                        <span class="card-title">EvolvePro-directed evolution</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-04-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhangchaofan
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Deep-Learning/">
+                        <span class="chip bg-color">Deep Learning</span>
+                    </a>
+                    
+                    <a href="/tags/Directed-evolution/">
+                        <span class="chip bg-color">Directed evolution</span>
+                    </a>
+                    
+                    <a href="/tags/Molecular-design/">
+                        <span class="chip bg-color">Molecular design</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2032721327"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2025</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">zhangchaofan</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">46.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "3";
+                    var startDate = "09";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/chaofan520" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2439555626@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2439555626" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2439555626" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=ZHCHFH27" class="tooltipped" target="_blank" data-tooltip="微信联系我: ZHCHFH27" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+	
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    <!-- 
+     -->
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+     
+    <script src="/js/cursor.js"></script>
+    <script src="/js/FunnyTitle.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> 
+    <!-- 动态线条背景
+    <script type="text/javascript"
+    color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script> -->
+    
+    <script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script>
+    
+</body>
+
+</html>
